@@ -1,0 +1,12 @@
+#scoreBar {
+    color: white;
+    border-style: solid;
+    border-color: gray;
+    background-color: green;
+    opacity: 0.8;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
