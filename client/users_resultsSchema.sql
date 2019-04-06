@@ -9,7 +9,7 @@ CREATE TABLE users(
   email VARCHAR(100) NOT NULL,
   password VARCHAR(100) NOT NULL,
   image BLOB NOT NULL,
-  PRIMARY KEY (id)
+  PRIMARY KEY (user_id)
 );
 
 CREATE TABLE results(
@@ -18,6 +18,6 @@ CREATE TABLE results(
   foreign key (battle_id) references battle(battle_id),
   outcome BIT NOT NULL,
   score INT NOT NULL,
-  PRIMARY KEY (id)
+  PRIMARY KEY (results_id)
 );
 
