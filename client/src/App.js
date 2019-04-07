@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Battle from "./pages/battle";
+import Lobby from "./pages/lobby";
 
 import './App.css';
 
@@ -9,12 +10,10 @@ import './App.css';
 function App() {
     return (
     <Router>
-      <div className="App">
-        <h1>Battle Page</h1>
-          <hr></hr>    
+      <div className="App"> 
+        <Route exact path="/lobby" component={Lobby} />
         <div className="container">
-            <br></br>
-        {/* <Route exact path="/lobby" component={Lobby} /> */}
+            {/* <br></br> */}
         <Route exact path="/battle" component={Battle} />
         </div>
       </div>

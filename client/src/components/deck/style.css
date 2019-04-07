@@ -1,0 +1,20 @@
+.deck {
+    align-content: center;
+    padding: 4px;
+}
+
+.card.card-body {
+    height: 100px;
+}
+
+.two {
+    background-color: grey;
+    border-color: blue;
+    border-style: solid;
+    margin: 10px 0 10px 35px;
+    width: 550px;
+    display: inherit;
+    align-content: space-between;
+    overflow-x: hidden; 
+    overflow-x: auto;
+} 

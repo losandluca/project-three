@@ -1,8 +1,6 @@
 body {
   font-family: 'Germania One', cursive;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-    background-image: url("./images/battle.jpg");
+  background-image: url("./images/battle.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,3 +12,6 @@ body {
   height: 100vh;
 }
 
+#title {
+  padding-right: 55px;
+}
