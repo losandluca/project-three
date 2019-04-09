@@ -1,54 +1,24 @@
-#block {
-    background-color: lightblue;
-    width: 95%;
-    height: 90vh;
-    
-    /* margin-bottom: 1rem; */
-    display: flex;
-    opacity: 0.8;
-}
-
-.one {
+#one {
     display: grid;
-    padding: 0.5rem;
+    grid-row-gap: 20px;
     border-style: solid;
     border-color: white;
-    align-content: space-between;
-    /* opacity: 0.8; */
+    width: 500px;
+    height: 400px;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-right: 10px;
 }
-
 
 #left1 {
     background-color: beige;
-    width: 450px;
-    height: 200px;
 }
 
 #left2 {
     background-color: purple;
-    width: 450px;
-    height: 200px;
 }
 
 #left3 {
     background-color: brown;
-    width: 450px;
-    height: 200px;
-}
-
-.col {
-    align-content: center;
-    text-align: center;
-    padding: 70px 0;
-    font-size: 30px;
-}
-
-.deck {
-    align-content: center;
-    padding: 4px;
-}
-
-.card.card-body {
-    height: 100px;
 }
 

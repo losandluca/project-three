@@ -4,7 +4,7 @@ import "./style.css";
 class Deck extends React.Component {
     render() {
         return (
-            <div className="two"> 
+            <div className="col" id="two"> 
             <div className="deck mx-auto">
                 <h3>My Deck</h3>
                     <div className="card-group">

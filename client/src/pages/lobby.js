@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FriendManage from "../components/FriendManage";
 import Deck from "../components/deck";
+import Wrapper from "../components/wrapper";
 // import Update from "../components/update";
 
 class Lobby extends Component {
@@ -13,12 +14,16 @@ class Lobby extends Component {
         return (
             <div>
                 <h2>Lobby</h2>
-                <hr></hr>
-                <div>
-                <FriendManage />
-                {/* <Update /> */}
-                <Deck />
-                </div>
+                    <hr></hr>
+                <Wrapper>
+                    {/* <div className="container lobby"> */}
+                        <div className="row">
+                            <FriendManage />
+                            {/* <Update /> */}
+                            <Deck /> 
+                        </div>
+                    {/* </div> */}
+                </Wrapper>
             </div>
         )
     }
