@@ -4,6 +4,7 @@ import "./style.css";
 class FriendManage extends React.Component {
     render() {
         return (
+
             <div id="block">
                 <div className="row one">
                     <div className="col" id="left1">Add/Delete A Friend</div>
@@ -13,6 +14,7 @@ class FriendManage extends React.Component {
             </div>
         )
     }
+
 }
 
 export default FriendManage;

@@ -1,21 +1,24 @@
 .deck {
     align-content: center;
-    padding: 4px;
+
+    /* padding: 4px; */
+    width: 750px;
+    /* margin-left: 5px; */
+
 }
 
 .card.card-body {
     height: 100px;
 }
 
-.two {
+
+#two {
     background-color: grey;
     border-color: blue;
     border-style: solid;
-    margin: 10px 0 10px 35px;
-    width: 550px;
-    display: inherit;
-    align-content: space-between;
+    width: 900px; 
+    height: 700px;
     overflow-x: hidden; 
-    overflow-x: auto;
+    /* overflow-x: auto; */
 } 
 
