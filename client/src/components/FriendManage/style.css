@@ -1,15 +1,4 @@
-
-#block {
-    background-color: lightblue;
-    width: 95%;
-    height: 90vh;
-    
-    /* margin-bottom: 1rem; */
-    display: flex;
-    opacity: 0.8;
-}
-
-.one {
+#one {
     display: grid;
     padding: 0.5rem;
     border-style: solid;
@@ -17,7 +6,6 @@
     align-content: space-between;
     /* opacity: 0.8; */
 }
-
 
 #left1 {
     background-color: beige;
@@ -28,7 +16,6 @@
 
 #left2 {
     background-color: purple;
-
     width: 450px;
     height: 200px;
 
@@ -36,7 +23,6 @@
 
 #left3 {
     background-color: brown;
-
     width: 450px;
     height: 200px;
 }
@@ -46,15 +32,5 @@
     text-align: center;
     padding: 70px 0;
     font-size: 30px;
-}
-
-.deck {
-    align-content: center;
-    padding: 4px;
-}
-
-.card.card-body {
-    height: 100px;
-
 }
 
