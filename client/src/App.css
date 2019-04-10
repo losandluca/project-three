@@ -18,13 +18,11 @@
   height: 100%;
   border: solid white;
   margin-bottom: 10px;
-  /* display: inline; */
-  /* flex-direction: column; */
-  /* margin: 0; */
 }
 
 h1, h2 {
   color: white;
+  text-shadow: 0 0 5px #282c34;
 }
 
 hr {

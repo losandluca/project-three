@@ -1,5 +1,4 @@
 import React from "react";
-// import Deck from "../components/deck";
 import "./style.css";
 
 class FriendManage extends React.Component {

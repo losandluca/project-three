@@ -12,3 +12,13 @@
 #playerCard {
     border: 2px solid black;
 }
+
+.container {
+    align-content: center;
+    /* display: flex; */
+}
+
+/* .card-group {
+    display: flex;
+
+} */

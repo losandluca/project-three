@@ -6,9 +6,14 @@ import Wrapper from "../components/wrapper";
 
 class Lobby extends Component {
 
-    // state = {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            cards: null
+        };
+      }
 
-    // }
+
 
     render() {
         return (
@@ -16,13 +21,14 @@ class Lobby extends Component {
                 <h2>Lobby</h2>
                     <hr></hr>
                 <Wrapper>
-                    {/* <div className="container lobby"> */}
+                    <div className="container-fluid lobby">
                         <div className="row">
-                            <FriendManage />
+                        <FriendManage />
                             {/* <Update /> */}
-                            <Deck /> 
+                        <Deck friends={this.state.cards}> //this here is JSX 
+                        </Deck>
                         </div>
-                    {/* </div> */}
+                    </div>
                 </Wrapper>
             </div>
         )

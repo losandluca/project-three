@@ -4,10 +4,10 @@ import "./style.css";
 class Hand extends React.Component {
     render() {
         return (
-        <div className="container-fluid" id="hand">
+        <div className="container" id="hand">
         <p>The player's hand</p>
             <div className="card-group">
-                <div className="card" id="playerCard">
+                <div className="card col-lg-2" id="playerCard">
                     <img src="..." className="card-img-top" alt="card image"></img>
                         <hr></hr>
                         <div className="card-body">
@@ -18,7 +18,7 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-                <div className="card" id="playerCard">
+                <div className="card col-lg-2" id="playerCard">
                     <img src="..." className="card-img-top" alt="card image"></img>
                         <hr></hr>
                         <div className="card-body">
@@ -29,7 +29,7 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-                <div className="card" id="playerCard">
+                <div className="card col-lg-2" id="playerCard">
                     <img src="..." className="card-img-top" alt="card image"></img>
                         <hr></hr>
                         <div className="card-body">
@@ -40,7 +40,7 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-                <div className="card" id="playerCard">
+                <div className="card col-lg-2" id="playerCard">
                     <img src="..." className="card-img-top" alt="card image"></img>
                         <hr></hr>
                         <div className="card-body">
@@ -51,7 +51,7 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-                <div className="card" id="playerCard">
+                <div className="card col-lg-2" id="playerCard">
                     <img src="..." className="card-img-top" alt="card image"></img>
                         <hr></hr>
                         <div className="card-body">

@@ -11,7 +11,7 @@ function App() {
     return (
     <Router>
       <div className="App"> 
-        <div className="container app">
+        <div className="container-fluid app">
         <Route exact path="/lobby" component={Lobby} />
             {/* <br></br> */}
         <Route exact path="/battle" component={Battle} />
