@@ -1,12 +1,10 @@
 body {
   font-family: 'Germania One', cursive;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-    background-image: url("./images/battle.jpg");
+  background-image: url("./images/battle.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: no-repeat cover;
 }
 
 #root {
@@ -14,3 +12,7 @@ body {
   height: 100vh;
 }
 
+#title {
+  padding-right: 55px;
+  text-shadow: 2px 2px 4px gold;
+}
