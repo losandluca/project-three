@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/losandluca/project-three#readme",
   "dependencies": {
-    "mysql": "^2.16.0"
+    "mysql": "^2.16.0",
+    "passport": "^0.4.0"
   }
 }
