@@ -14,5 +14,43 @@ body {
 
 #title {
   padding-right: 55px;
-  text-shadow: 2px 2px 4px gold;
+
 }
+
+.login{
+  font-family: 'Germania One', cursive;
+  position: absolute;
+  top:35%;
+  left:40%;
+  right: 40%;
+  background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+}
+
+
+.display-4 {
+  font-family : 'Germania One', cursive;
+ color: white;
+  text-shadow: 2px 2px #0e0c0c;
+  text-align: center;
+ width:100%;
+  
+}
+
+p.lead{
+  font-family : 'Germania One', cursive;
+  color: white;
+   text-shadow: 2px 2px #0e0c0c;
+   text-align: center;
+  width:100%;
+}
+
+.h1
+.h1{
+  font-family : 'Germania One', cursive;
+  color: white;
+   text-shadow: 2px 2px #0e0c0c;
+   text-align: center;
+  width:100%;
+}
+
