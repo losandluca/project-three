@@ -1,7 +1,7 @@
 .deck {
     align-content: center;
     width: 750px;
-    margin-left: 5px;
+    /* margin-left: 15px; */
 
 }
 
@@ -12,6 +12,7 @@
     width: 900px; 
     height: 700px;
     overflow-x: hidden; 
+    margin-left: 5px;
     /* overflow-x: auto; */
 } 
 

@@ -7,7 +7,7 @@ class Hand extends React.Component {
 
         <div className="container" id="hand">
         <p>The player's hand</p>
-            <div className="card-group">
+            <div className="card-group justify-content-center">
                 <div className="card col-lg-2" id="playerCard">
 
                     <img src="..." className="card-img-top" alt="card image"></img>

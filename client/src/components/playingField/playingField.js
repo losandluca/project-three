@@ -7,7 +7,7 @@ class Stage extends React.Component {
             <div className="container-fluid">
                 <div className="split left">
                 <p>Player 1/Card in play</p>
-                    <div className="card centered" id="playerCard">
+                    <div className="card col-lg-4 centered" id="playerCard">
                         <img src="..." className="card-img-top" alt="card image"></img>
                         <hr></hr>
                             <div className="card-body">
@@ -22,7 +22,7 @@ class Stage extends React.Component {
 
                 <div className="split right">
                 <p>Player 2/Card in play</p>
-                    <div className="card centered" id="playerCard">
+                    <div className="card col-lg-4 centered" id="playerCard">
                         <img src="..." className="card-img-top" alt="card image"></img>
                             <hr></hr>
                                 <div className="card-body">
