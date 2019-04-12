@@ -7,23 +7,19 @@ import"../components/start/start.css";
 import Facebook from "../components/Facebook";
 
 
-
-
-// import {External Content} from "bootstrap";
-
 class Home extends Component {
+
   render() {
     return (
-  <div className="container">
-    <Jumbotron />
-    <br></br>
-    <h1> Lets Get Started</h1>
-    <Facebook /> 
-  
-     </div>
-  )
+      <div className="container">
+        <Jumbotron />
+        <br></br>
+        <h1>Lets Get Started</h1>
+        <Facebook /> 
+      
+      </div>
+      )
     }
 };
  
-
 export default Home;

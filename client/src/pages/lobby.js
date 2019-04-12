@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import FriendManage from "../components/FriendManage";
 import Deck from "../components/deck";
-
 import Wrapper from "../components/wrapper";
-
 // import Update from "../components/update";
 
 class Lobby extends Component {
-
 
     constructor(props) {
         super(props);

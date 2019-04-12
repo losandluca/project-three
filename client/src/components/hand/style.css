@@ -7,7 +7,6 @@
     margin-bottom: 20px;
     opacity: 0.8;
     padding: 15px 15px 15px 15px;
-    
 }
 
 #playerCard {
@@ -16,6 +15,5 @@
 
 .container {
     align-content: center;
-    /* display: flex; */
 }
 
