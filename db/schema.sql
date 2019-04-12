@@ -3,6 +3,7 @@ CREATE DATABASE friend_zone;
 
 USE friend_zone;
 
+
 CREATE TABLE users(
   user_id INT NOT NULL AUTO_INCREMENT,
   full_name VARCHAR (100) NOT NULL,
@@ -42,6 +43,7 @@ CREATE TABLE battle(
   FOREIGN KEY (alliance_id) references alliance(alliance_id),
   PRIMARY KEY (battle_id)
 );
+
 CREATE TABLE results(
   results_id INT NOT NULL AUTO_INCREMENT,
   user_id INT NOT NULL,
@@ -52,6 +54,3 @@ CREATE TABLE results(
   score INT NOT NULL,
   PRIMARY KEY (results_id)
 );
-
-
-
