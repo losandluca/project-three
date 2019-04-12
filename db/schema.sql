@@ -5,10 +5,11 @@ USE friend_zone;
 
 CREATE TABLE users(
   user_id INT NOT NULL AUTO_INCREMENT,
+  full_name VARCHAR (100) NOT NULL,
   user_name VARCHAR(100) NOT NULL,
-  email VARCHAR(100) NOT NULL,
   password VARCHAR(100) NOT NULL,
   image BLOB NOT NULL,
+  short_description VARCHAR (20) NOT NULL,
   PRIMARY KEY (user_id)
 );
 
