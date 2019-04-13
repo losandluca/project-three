@@ -3,6 +3,7 @@ import FacebookLogin from "react-facebook-login";
 
 
 class Facebook extends Component {
+
     state = {
         isLoggedIn: false,
         userId: '',
@@ -11,6 +12,7 @@ class Facebook extends Component {
         picture: ''
 
     }
+    
     responseFacebook = response => {
         console.log(response);
     }
@@ -24,7 +26,7 @@ class Facebook extends Component {
         } else {
             fbContent = (<FacebookLogin
                 appId="2344850238887487"
-                autoLoad={true}
+                autoLoad={false}
                 fields="name,email,picture"
                 onClick={this.componentClicked}
                 callback={this.responseFacebook} />);
