@@ -13,8 +13,7 @@ class Lobby extends Component {
         };
       }
 
-
-    render() {
+      render() {
         return (
             <div>
                 <h2>Lobby</h2>
@@ -24,7 +23,7 @@ class Lobby extends Component {
                         <div className="row justify-content-center">
                         <FriendManage />
                             {/* <Update /> */}
-                        <Deck friends={this.state.cards}> //this here is JSX 
+                        <Deck friends={this.state.cards}> 
                         </Deck>
                         </div>
                     </div>
