@@ -13,7 +13,7 @@ class Hand extends React.Component {
                             <h5 className="card-title">Player's Name</h5>
                             <p className="card-text">Players short description</p>
                             <hr></hr>
-                            <img src="..." className="card-img-top" alt="card image"></img>
+                            <img src="..." className="card-img-top" alt="card"></img>
                         </div>
                         <div className="card-footer">
                         <small className="text-muted">Player's Attack & Health Stats</small>
@@ -25,7 +25,7 @@ class Hand extends React.Component {
                             <h5 className="card-title">Player's Name</h5>
                             <p className="card-text">Players short description</p>
                             <hr></hr>
-                            <img src="..." className="card-img-top" alt="card image"></img>
+                            <img src="..." className="card-img-top" alt="card"></img>
                         </div>
                         <div className="card-footer">
                         <small className="text-muted">Player's Attack & Health Stats</small>
@@ -37,7 +37,7 @@ class Hand extends React.Component {
                             <h5 className="card-title">Player's Name</h5>
                             <p className="card-text">Players short description</p>
                             <hr></hr>
-                            <img src="..." className="card-img-top" alt="card image"></img>
+                            <img src="..." className="card-img-top" alt="card"></img>
                         </div>
                         <div className="card-footer">
                         <small className="text-muted">Player's Attack & Health Stats</small>
@@ -49,7 +49,7 @@ class Hand extends React.Component {
                             <h5 className="card-title">Player's Name</h5>
                             <p className="card-text">Players short description</p>
                                 <hr></hr>
-                            <img src="..." className="card-img-top" alt="card image"></img>
+                            <img src="..." className="card-img-top" alt="card"></img>
                         </div>
                         <div className="card-footer">
                         <small className="text-muted">Player's Attack & Health Stats</small>
@@ -61,7 +61,7 @@ class Hand extends React.Component {
                             <h5 className="card-title">Player's Name</h5>
                             <p className="card-text">Players short description</p>
                                 <hr></hr>
-                            <img src="..." className="card-img-top" alt="card image"></img>
+                            <img src="..." className="card-img-top" alt="card"></img>
                         </div>
                         <div className="card-footer">
                         <small className="text-muted">Player's Attack & Health Stats</small>

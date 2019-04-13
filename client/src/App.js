@@ -4,6 +4,7 @@ import Battle from "./pages/battle";
 import Lobby from "./pages/lobby";
 import Home from "./pages/home";
 import './App.css';
+// import defaultCards from "./image.json";
 
 
 
