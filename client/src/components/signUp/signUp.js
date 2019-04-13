@@ -7,7 +7,7 @@ class Signup extends Component {
         super(props);
 
         this.state = {
-            fullname: "",
+            email: "",
             username: "",
             password: "",
             image: "",
@@ -38,11 +38,11 @@ class Signup extends Component {
             <div className="Login">
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup controlId="fullname" bsSize="large">
-                        <FormLabel>Full name</FormLabel>
+                        <FormLabel>Email</FormLabel>
                         <FormControl
                             autoFocus
-                            type="fullname"
-                            value={this.state.fullname}
+                            type="email"
+                            value={this.state.email}
                             onChange={this.handleChange}
                         />
                     </FormGroup>
