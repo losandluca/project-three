@@ -19,8 +19,10 @@ class Home extends Component {
     <br></br>
     <h1> Lets Get Started</h1>
     <Facebook /> 
-  
-     </div>
+    <h3> Or.</h3>
+    <button type="button" class="btn btn-secondary btn-lg">Sign In / Or Sign Up</button>
+    <a href="./register.js"></a>
+    </div>
   )
     }
 };
