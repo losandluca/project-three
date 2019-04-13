@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FriendManage from "../components/FriendManage";
 import Deck from "../components/deck";
 import Wrapper from "../components/wrapper";
-// import Update from "../components/update";
+// import Update from "../components/Update";
 
 class Lobby extends Component {
 
@@ -13,8 +13,7 @@ class Lobby extends Component {
         };
       }
 
-
-    render() {
+      render() {
         return (
             <div>
                 <h2>Lobby</h2>
@@ -23,7 +22,7 @@ class Lobby extends Component {
                     <div className="container-fluid lobby">
                         <div className="row justify-content-center">
                         <FriendManage />
-                            {/* <Update /> */}
+                        {/* <Update /> */}
                         <Deck friends={this.state.cards}> //this here is JSX 
                         </Deck>
                         </div>

@@ -1,0 +1,21 @@
+/* #one {
+    display: grid;
+    padding: 0.5rem;
+    border-style: solid;
+    border-color: white;
+    align-content: space-between;
+    margin-right: 5px;
+}
+
+.col {
+    align-content: center;
+    text-align: center;
+    padding: 70px 0;
+    font-size: 30px;
+}
+
+#left2 {
+    background-color: purple;
+    width: 450px;
+    height: 200px;
+} */
