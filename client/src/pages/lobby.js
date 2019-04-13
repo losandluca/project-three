@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FriendManage from "../components/FriendManage";
 import Deck from "../components/deck";
 import Wrapper from "../components/wrapper";
-// import Update from "../components/Update";
+// import Update from "../components/update";
 
 class Lobby extends Component {
 
@@ -22,8 +22,8 @@ class Lobby extends Component {
                     <div className="container-fluid lobby">
                         <div className="row justify-content-center">
                         <FriendManage />
-                        {/* <Update /> */}
-                        <Deck friends={this.state.cards}> //this here is JSX 
+                            {/* <Update /> */}
+                        <Deck friends={this.state.cards}> 
                         </Deck>
                         </div>
                     </div>

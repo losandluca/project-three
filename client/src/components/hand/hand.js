@@ -19,7 +19,6 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
@@ -31,7 +30,6 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
@@ -43,7 +41,6 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
@@ -55,7 +52,6 @@ class Hand extends React.Component {
                         <small className="text-muted">Player's Attack & Health Stats</small>
                     </div>
                 </div>
-
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>

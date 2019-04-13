@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-import "./signUp.css";
+import "./signup.css";
 
 class Signup extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            fullname: "",
+            email: "",
             username: "",
             password: "",
             image: "",
@@ -38,11 +38,11 @@ class Signup extends Component {
             <div className="Login">
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup controlId="fullname" bsSize="large">
-                        <FormLabel>Full name</FormLabel>
+                        <FormLabel>Email</FormLabel>
                         <FormControl
                             autoFocus
-                            type="fullname"
-                            value={this.state.fullname}
+                            type="email"
+                            value={this.state.email}
                             onChange={this.handleChange}
                         />
                     </FormGroup>
