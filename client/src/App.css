@@ -18,13 +18,17 @@
   height: 100%;
   border: solid white;
   margin-bottom: 10px;
-  /* display: inline; */
-  /* flex-direction: column; */
-  /* margin: 0; */
 }
 
 h1, h2 {
+  font-family : 'Germania One', cursive;
   color: white;
+  text-align: center;
+  text-shadow: 		4px -5px 4px #000,
+                  1px -1px 4px gold,
+                  -1px 1px 4px gold,
+                  1px 1px 4px gold;
+  
 }
 
 hr {
@@ -34,4 +38,8 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0; 
+}
+
+.card, .card-body {
+  padding: 0;
 }

@@ -1,23 +1,16 @@
 .deck {
     align-content: center;
-    padding: 4px;
     width: 750px;
-    margin-left: 5px;
-}
-
-.card.card-body {
-    height: 100px;
+    /* margin-left: 15px; */
 }
 
 #two {
     background-color: grey;
     border-color: blue;
     border-style: solid;
-    /* position: relative; */
-    width: 800px; 
+    width: 900px; 
     height: 700px;
-    
-    margin-left: 5px;
     overflow-x: hidden; 
-    overflow-x: auto;
+    margin-left: 5px;
 } 
+
