@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Battle from "./pages/battle";
 import Lobby from "./pages/lobby";
 import Home from "./pages/home";
+// import Game from './Game';
 import './App.css';
 
 
@@ -15,6 +16,8 @@ function App() {
         <Route exact path ="/" component= {Home} />
         <Route exact path="/lobby" component={Lobby} />
         <Route exact path="/battle" component={Battle} />
+        {/* Firebase routes */}
+        {/* <Route exact path="/:token" component={Game} /> */}
       </div>
     </div>
   </Router>   

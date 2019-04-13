@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Firebase from './client/src/config/firebase'
+import firebase from './client/src/config/firebase'
+
+const { firebase } = window;
 
 const express = require("express");
 const mysql = require("mysql");
@@ -18,44 +20,44 @@ const connection = mysql.createConnection({
 });
 
 connection.connect(err => {
-    if(err) {
+    if (err) {
         return err;
     }
 })
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-  });
-  
-  class Fire extends Component {
+});
 
-    state = {
-        playerOneExists: false,
-        PlayerTwoExists: false,
-        online: false,
-        // playerOneStartPoints: 1000,
-        // playerTwoStartPoints: 2000,
-        currentPlayerTurn: null,
-        playersInGame: null,
+class Fire extends Component {
 
-    }
 
-    //add user to 
-    handleOnClick = event => {
-        event.preventDefault();
-        if (currentPlayers < 2) {
-            if (playerOneExists) {
-                playerNum = 2;
-            } else {
-                playerNum = 1;
-            }
-        }
+
+    createGame = () => {
+        const newGame = {
+            p1_token: TokenU.token(),
+            p2_token: TokenU.token()
+        };
+
+        const game = firebase.database().ref("games").push();
+
+        game
+            .set(newGame)
+            .then(() => {
+                window.location.hash = `#/${newGame.p1_token}`;
+            }, (err) => {
+                throw err;
+            });
     }
     render() {
         return (
-            this.playerNum //not real thing just getting rid of error to save
-        
-    
+
+            <div className='view row'>
+                <div className='column column-50 column-offset-25' style={{ textAlign: 'center' }}>
+                    <h3>Create a New Game</h3>
+                    <button onClick={createGame}>Create a New Game</button>
+                </div>
+            </div>
         )
     }
 
