@@ -10,9 +10,9 @@ class Stage extends React.Component {
                     <div className="card col-lg-4 centered" id="playerCard">
                             <div className="card-body">
                                 <h5 className="card-title">Player's Name</h5>
-                                <p className="card-text">Players short description</p>
+                                <p className="card-text">Player's title</p>
                                     <hr></hr>
-                                <img src="..." className="card-img-top" alt="card image"></img>
+                                <img src="..." className="card-img-top" alt="card"></img>
                             </div>
                             <div className="card-footer">
                             <small className="text-muted">Player's Attack & Health Stats</small>
@@ -25,9 +25,9 @@ class Stage extends React.Component {
                     <div className="card col-lg-4 centered" id="playerCard">
                             <div className="card-body">
                                 <h5 className="card-title">Player's Name</h5>
-                                <p className="card-text">Players short description</p>
+                                <p className="card-text">Player's title</p>
                                     <hr></hr>
-                                <img src="..." className="card-img-top" alt="card image"></img>
+                                <img src="..." className="card-img-top" alt="card"></img>
                             </div>
                             <div className="card-footer">
                             <small className="text-muted">Player's Attack & Health Stats</small>

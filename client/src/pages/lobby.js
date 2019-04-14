@@ -12,8 +12,9 @@ class Lobby extends Component {
         this.state = {
             cards: null
         };
-    }
-    render() {
+      }
+
+      render() {
         return (
             <div>
                 <h2>Lobby</h2>
@@ -23,8 +24,7 @@ class Lobby extends Component {
                         <div className="row justify-content-center">
                             <FriendManage />
                             {/* <Update /> */}
-                            <Deck friends={this.state.cards}> //this here is JSX 
-                            </Deck>
+                        <Deck friends={this.state.cards}></Deck>
                         </div>
                     </div>
                 </Wrapper>

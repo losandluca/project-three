@@ -20,6 +20,11 @@
   margin-bottom: 10px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 h1, h2 {
   font-family : 'Germania One', cursive;
   color: white;
