@@ -3,21 +3,20 @@ CREATE DATABASE friend_zone;
 
 USE friend_zone;
 
-
 CREATE TABLE users(
   user_id INT NOT NULL AUTO_INCREMENT,
   full_name VARCHAR (100) NOT NULL,
   user_name VARCHAR(100) NOT NULL,
   password VARCHAR(100) NOT NULL,
   image BLOB NOT NULL,
-  short_description VARCHAR (20) NOT NULL,
+  title VARCHAR (25) NOT NULL,
   PRIMARY KEY (user_id)
 );
 
 CREATE TABLE card (
 	id INT NOT NULL AUTO_INCREMENT,
 	card_name VARCHAR(100) NOT NULL,
-    short_description VARCHAR (20) NOT NULL,
+  title VARCHAR (25) NOT NULL,
 	image BLOB NOT NULL,
     health INT NOT NULL,
     attack INT NOT NULL,
@@ -31,6 +30,7 @@ CREATE TABLE alliance(
   PRIMARY KEY (alliance_id),
   FOREIGN KEY (card_id) REFERENCES card(id)
 );
+
 CREATE TABLE battle(
   battle_id INT NOT NULL AUTO_INCREMENT,
   alliance_id INT NOT NULL,
