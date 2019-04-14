@@ -8,12 +8,17 @@ import Navbar from "./components/navbar";
 import defaultCards from "./image.json";
 import './App.css';
 
+class App extends React.Component {
 
-function App() {
+  state = {
+    online: false //is the user online 
+  };
 
+
+render() {
   return (
   <Router>
-    <Navbar />
+    <Navbar online={this.state.online} />
       <div className="App"> 
         <div className="container-fluid app">
           <Route exact path="/" component={Home} />
@@ -24,6 +29,7 @@ function App() {
       </div>
   </Router>   
   );
+  }
 }
 
 export default App;
