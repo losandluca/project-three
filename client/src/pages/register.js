@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../index.css";
-// import Login from "../components/login/login";
-// import Signup from "../components/signUp/signUp";
+import Login from "../components/login/login";
+import Signup from "../components/signUp/signUp";
 
 
 class Register extends Component {
