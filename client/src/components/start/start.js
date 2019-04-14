@@ -1,106 +1,22 @@
-// import React from "react";
-// import "./start.css";
-// import "../social/facebook-config";
+import React, {Component} from "react";
+// import { BrowserRouter } from 'react-router-dom';
+import Register from "../signUp";
 
 
- 
-// import { facebookConfig} from "../social/facebook-config";
- 
-// class StartButton extends React.Component {
-//   constructor(props) {
-//     super(props);
- 
-//     this.state = {
-//       showModal: false,
-//       loading: false,
-//       error: null
-//     };
-//   }
- 
-//   openModal() {
-//     this.setState({
-//       showModal: true
-//     });
-//   }
- 
-//   closeModal() {
-//     this.setState({
-//       showModal: false,
-//       error: null
-//     });
-//   }
- 
-//   onLoginSuccess(method, response) {
-//     console.log("logged successfully with " + method);
-//   }
- 
-//   onLoginFail(method, response) {
-//     console.log("logging failed with " + method);
-//     this.setState({
-//       error: response
-//     });
-//   }
- 
-//   startLoading() {
-//     this.setState({
-//       loading: true
-//     });
-//   }
- 
-//   finishLoading() {
-//     this.setState({
-//       loading: false
-//     });
-//   }
- 
-//   afterTabsChange() {
-//     this.setState({
-//       error: null
-//     });
-//   }
- 
-//   render() {
-//     return (
-//       <div>
-//         <button onClick={() => this.openModal()}>Open Modal</button>
- 
-//         <StartButton
-//           visible={this.state.showModal}
-//           onCloseModal={this.closeModal.bind(this)}
-//           loading={this.state.loading}
-//           error={this.state.error}
-//           tabs={{
-//             afterChange: this.afterTabsChange.bind(this)
-//           }}
-//           loginError={{
-//             label: "Couldn't sign in, please try again."
-//           }}
-//           registerError={{
-//             label: "Couldn't sign up, please try again."
-//           }}
-//           startLoading={this.startLoading.bind(this)}
-//           finishLoading={this.finishLoading.bind(this)}
-//           providers={{
-//             facebook: {
-//               config: facebookConfig,
-//               onLoginSuccess: this.onLoginSuccess.bind(this),
-//               onLoginFail: this.onLoginFail.bind(this),
-//               label: "Continue with Facebook"
-//             },
-//             // google: {
-//             //   config: googleConfig,
-//             //   onLoginSuccess: this.onLoginSuccess.bind(this),
-//             //   onLoginFail: this.onLoginFail.bind(this),
-//             //   label: "Continue with Google"
-//             // }
-//           }}
-//         />
-//       </div>
-//     );
-//   }
-// }
+class Start extends Component {
+render() {
+    return (
+        <div class = "container">
+        <button type="button" class="btn btn-secondary btn-lg">
+        <a class="nav-link text-white" href="Register" >Login / Sign In.</a>
+        </button>
+         </div>
 
-// export default StartButton;
+    );
+  }
+}
+
+export default Start;
 
 
 
