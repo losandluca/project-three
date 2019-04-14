@@ -1,15 +1,21 @@
+import Rebase from 're-base'
 
-<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+import * as firebase from 'firebase'
 
-  // Initialize Firebase
-  var config = {
+
+
+var config = {
     apiKey: "AIzaSyAPfRZD_rwtx1AOKjpWbfXv006siB4EqYc",
     authDomain: "friend-zone-20df1.firebaseapp.com",
     databaseURL: "https://friend-zone-20df1.firebaseio.com",
     projectId: "friend-zone-20df1",
     storageBucket: "friend-zone-20df1.appspot.com",
     messagingSenderId: "450313547301"
-  };
-const fire = firebase.initializeApp(config);
+ };
 
-export default fire;
+// firebase.initializeApp(config)
+
+const firebaseApp = firebase.initializeApp(config)
+const databaseBase = Rebase.createClass(firebaseApp.database())
+
+export {databaseBase,firebase}
