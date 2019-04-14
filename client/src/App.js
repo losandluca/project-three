@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Register from './pages/register';
 import Navbar from "./components/navbar";
 import defaultCards from "./image.json";
+// import Game from './Game';
 import './App.css';
 
 class App extends React.Component {
