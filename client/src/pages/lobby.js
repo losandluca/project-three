@@ -23,8 +23,7 @@ class Lobby extends Component {
                         <div className="row justify-content-center">
                         <FriendManage />
                             {/* <Update /> */}
-                        <Deck friends={this.state.cards}> 
-                        </Deck>
+                        <Deck friends={this.state.cards}></Deck>
                         </div>
                     </div>
                 </Wrapper>
