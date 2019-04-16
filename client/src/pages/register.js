@@ -9,10 +9,10 @@ class Register extends Component {
         return(
             <div className = "form">
             <h1>Already a member ?</h1>
-            {/* <Login /> */}
+            <Login />
             <br></br>
             <h2> If not lets get started!</h2>
-            {/* <Signup /> */}
+            <Signup />
             <br></br>
             </div>
         )

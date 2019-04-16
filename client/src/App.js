@@ -5,7 +5,7 @@ import Lobby from "./pages/lobby";
 import Home from "./pages/home";
 import Register from './pages/register';
 import Navbar from "./components/navbar";
-import defaultCards from "./image.json";
+// import defaultCards from "./image.json";
 // import Game from './Game';
 import './App.css';
 

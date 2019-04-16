@@ -11,7 +11,7 @@ class Navbar extends React.Component {
                     <h5 className="text-white h4">Are You Ready?</h5>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Login / Sign In.</a>
+                            <a className="nav-link text-white" href="/">Login / Sign In.</a>
                         </li>
                     </ul>    
                 </div>
