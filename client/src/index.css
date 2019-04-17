@@ -12,11 +12,6 @@ body {
   height: 100vh;
 }
 
-#title {
-  padding-right: 55px;
-  text-shadow: 0 4px 5px black;
-}
-
 .login {
   font-family: 'Germania One', cursive;
   position: absolute;

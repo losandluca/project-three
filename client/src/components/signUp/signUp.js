@@ -12,7 +12,7 @@ class Signup extends Component {
             password: "",
             image: "",
             aboutYou: "",
-
+            placeHolder: "Example: Knight, The Queen, Wizard, etc."
         };
     }
 
@@ -70,10 +70,11 @@ class Signup extends Component {
                             />
                         </FormGroup>
                         <FormGroup controlId="aboutYou" bsSize="large">
-                            <FormLabel>About You.</FormLabel>
+                            <FormLabel>Your Title</FormLabel>
                             <FormControl
                                 value={this.state.aboutYou}
                                 onChange={this.handleChange}
+                                placeholder={this.state.placeHolder}
                             />
                         </FormGroup>
 

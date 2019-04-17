@@ -11,7 +11,7 @@ class Hand extends React.Component {
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
-                            <p className="card-text">Players short description</p>
+                            <p className="card-text">Players title</p>
                             <hr></hr>
                             <img src="..." className="card-img-top" alt="card"></img>
                         </div>
@@ -22,7 +22,7 @@ class Hand extends React.Component {
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
-                            <p className="card-text">Players short description</p>
+                            <p className="card-text">Players title</p>
                             <hr></hr>
                             <img src="..." className="card-img-top" alt="card"></img>
                         </div>
@@ -33,7 +33,7 @@ class Hand extends React.Component {
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
-                            <p className="card-text">Players short description</p>
+                            <p className="card-text">Players title</p>
                             <hr></hr>
                             <img src="..." className="card-img-top" alt="card"></img>
                         </div>
@@ -44,7 +44,7 @@ class Hand extends React.Component {
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
-                            <p className="card-text">Players short description</p>
+                            <p className="card-text">Players title</p>
                                 <hr></hr>
                             <img src="..." className="card-img-top" alt="card"></img>
                         </div>
@@ -55,7 +55,7 @@ class Hand extends React.Component {
                 <div className="card col-lg-4" id="playerCard">
                         <div className="card-body">
                             <h5 className="card-title">Player's Name</h5>
-                            <p className="card-text">Players short description</p>
+                            <p className="card-text">Players title</p>
                                 <hr></hr>
                             <img src="..." className="card-img-top" alt="card"></img>
                         </div>
