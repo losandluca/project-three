@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Score from "../components/scoreBar";
 import Stage from "../components/playingField";
 import Hand from "../components/hand";
-import {databaseBase,firebase} from '../base'
+import {databaseBase, firebase} from '../base'
 
 class Battle extends Component {
 
@@ -17,6 +17,7 @@ class Battle extends Component {
         cardsUsed: [],  //cards user has already played
         firebaseData: []
     }; 
+    
     componentDidMount(){
         databaseBase.syncState('/game', {
             context: this,

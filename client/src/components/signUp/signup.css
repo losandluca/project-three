@@ -1,14 +1,13 @@
 .Signup {
     padding: 0px 0;
-  }
+}
 
-  .Signup form {
-    margin: 0 auto;
-   
-  }
+.Signup form {
+  margin: 0 auto;
+  
+}
 
-  .Login{
-    background-color:black;
-    opacity: 0.8;
-    margin:auto;
-  }
+.Login{
+
+  margin:auto;
+}
