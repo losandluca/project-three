@@ -16,7 +16,14 @@ const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "root",
-    database: "react_sql"
+    database: "friend-zone"
+});
+
+app.post('./client/src/components/signUp/signUp.js', function(req, res) {
+  var user = req.body;
+  var query = connection.query('INSERT INTO users SET ?',  user, function(err, result) {
+  });
+  res.end('Success');
 });
 
 connection.connect(err => {
@@ -27,5 +34,6 @@ connection.connect(err => {
 
 app.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-});
+
+  });
 
