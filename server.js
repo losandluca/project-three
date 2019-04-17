@@ -1,3 +1,8 @@
+import React, { Component } from 'react';
+import firebase from './client/src/config/firebase'
+
+const { firebase } = window;
+
 const express = require("express");
 const mysql = require("mysql");
 const app = express();
@@ -22,11 +27,11 @@ app.post('./client/src/components/signUp/signUp.js', function(req, res) {
 });
 
 connection.connect(err => {
-    if(err) {
+    if (err) {
         return err;
     }
 })
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
   });

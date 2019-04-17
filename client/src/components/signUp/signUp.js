@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+// import axios from "axios";
 import "./signup.css";
 
 class Signup extends Component {
@@ -12,7 +13,7 @@ class Signup extends Component {
             password: "",
             image: "",
             aboutYou: "",
-
+            placeHolder: "Example: Knight, The Queen, Wizard, etc."
         };
     }
 
@@ -22,22 +23,29 @@ class Signup extends Component {
     }
 
     handleChange = event => {
+        // console.log(event.target);
         this.setState({
             [event.target.id]: event.target.value
         });
     }
 
     handleSubmit = event => {
-         event.preventDefault();
-        console.log(this.state);
+        event.preventDefault();
+        let form = event.target
+        let obj = {};
+        for (let i = 0; i < form.elements.length; i++) {
+            let values = form.elements[i].value;  
+            let inputId = form.elements[i].id;
+            obj[inputId]  =  values;
+        }
+        console.log(obj); //shows us what user input into the form elements
     }
 
     render() {
         return (
-            
             <div className="Login">
-                <form onSubmit={this.handleSubmit}>
-                    <FormGroup controlId="fullname" bsSize="large">
+                <form onSubmit={e => this.handleSubmit(e)}>
+                    <FormGroup controlId="email">
                         <FormLabel>Email</FormLabel>
                         <FormControl
                             autoFocus
@@ -46,52 +54,47 @@ class Signup extends Component {
                             onChange={this.handleChange}
                         />
                     </FormGroup>
-                    <FormGroup controlId="username" bsSize="large">
+                    <FormGroup controlId="username">
                         <FormLabel>Username</FormLabel>
                         <FormControl
+                            
                             value={this.state.username}
                             onChange={this.handleChange}
-                        />
+                    />
                     </FormGroup>
-
-                    <FormGroup controlId="password" bsSize="large">
+                    <FormGroup controlId="password">
                         <FormLabel>Password</FormLabel>
                         <FormControl
                             value={this.state.password}
                             onChange={this.handleChange}
                             type="password"
                         />
-
-                        <FormGroup controlId="image" bsSize="large">
-                            <FormLabel>Selfie</FormLabel>
-                            <FormControl
-                                value={this.state.image}
-                                onChange={this.handleChange}
-                            />
-                        </FormGroup>
-                        <FormGroup controlId="aboutYou" bsSize="large">
-                            <FormLabel>About You.</FormLabel>
-                            <FormControl
-                                value={this.state.aboutYou}
-                                onChange={this.handleChange}
-                            />
-                        </FormGroup>
-
-
+                    </FormGroup>    
+                    <FormGroup controlId="image">
+                        <FormLabel>Selfie</FormLabel>
+                        <FormControl
+                            
+                            value={this.state.image}
+                            onChange={this.handleChange}
+                        />
                     </FormGroup>
-
+                    <FormGroup controlId="aboutYou">
+                        <FormLabel>Your Title</FormLabel>
+                        <FormControl
+                            value={this.state.aboutYou}
+                            onChange={this.handleChange}
+                            placeholder={this.state.placeHolder}
+                        />
+                    </FormGroup>
 
                     <Button
                         block
-                        bsSize="large"
                         type="submit"
                     >
                         Sign Up.
-          </Button>
+                    </Button>
                 </form>
             </div>
-            
-
         );
     }
 }
