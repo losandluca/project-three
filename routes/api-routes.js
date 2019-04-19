@@ -20,9 +20,12 @@ module.exports = function(app) {
     console.log(req.body);
     db.User.create({
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      full_name: req.body.full_name,
+      title: req.body.title,
+      image: req.body.image
     }).then(function() {
-      res.redirect(307, "/api/login");
+      res.redirect(307, "/lobby");
     }).catch(function(err) {
       console.log(err);
       res.json(err);

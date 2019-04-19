@@ -20,11 +20,10 @@ module.exports = function(sequelize, DataTypes) {
     },
     full_name: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull:  false
     },
-    short_desctiption: {
+    title: {
         type: DataTypes.STRING,
-        allowNull: false
     },
     image: {
     type: DataTypes.STRING,
