@@ -3,8 +3,7 @@ import "./style.css";
 
 function Card(props) {
     return (
-
-        <div id="playerCard">
+        <div className="card" id="playerCard">
             <div className="card-body" id={props.id}>
                 <h5 className="card-title" >{props.playerName}</h5>
                 <p className="card-text" >{props.title}</p>
@@ -15,10 +14,7 @@ function Card(props) {
                 <small className="text-muted">Health: {props.health} | Attack: {props.attack}</small>
             </div>
         </div>
-
-
     )
-
 }
 
 export default Card;

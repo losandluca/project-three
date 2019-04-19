@@ -7,7 +7,7 @@ import { databaseBase, firebase } from '../base'
 class Battle extends Component {
 
     state = {
-        cards: [],
+        cardsInDeck: [], //array to hold the cards currently in deck
         player1Health: 1000,
         player2Health: 1000,
         timer: 0,
@@ -18,8 +18,9 @@ class Battle extends Component {
         firebaseData: [],
         playerOneExists: false,
         playerTwoExists: false,
-        key:" "//assign playerOne or playerTwo as key value for battle
+        key: " " //assign playerOne or playerTwo as key value for battle
     };
+
     componentDidMount() {
         databaseBase.syncState('/game', {
             context: this,
@@ -28,6 +29,7 @@ class Battle extends Component {
             keepKeys: true,
         });
     }
+
     battleClick = event => {
         event.preventDefault();
         console.log("clicked");

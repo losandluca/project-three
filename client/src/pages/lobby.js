@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FriendManage from "../components/FriendManage";
 import Deck from "../components/deck";
 import Wrapper from "../components/wrapper";
-import Update from "../components/update";
+// import Update from "../components/update";
 
 
 class Lobby extends Component {
@@ -34,7 +34,7 @@ class Lobby extends Component {
 
             </div>
         )
-    }
-}
+    };
+};
 
 export default Lobby;
