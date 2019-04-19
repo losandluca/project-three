@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-// import axios from "axios";
+import API from "../../utils/API";
 import "./signup.css";
 
 class Signup extends Component {
@@ -12,14 +12,14 @@ class Signup extends Component {
             username: "",
             password: "",
             image: "",
-            aboutYou: "",
+            title: "",
             placeHolder: "Example: Knight, The Queen, Wizard, etc."
         };
     }
 
     validateForm() {
-        return this.state.fullname.length > 0 && this.state.username.length > 0 &&
-            this.state.password.legnth > 0 && this.state.image > 0 && this.state.aboutYou.legnth > 0;
+        return this.state.username.length > 0 &&
+            this.state.password.legnth > 0 && this.state.image > 0 && this.state.title.legnth > 0;
     }
 
     handleChange = event => {
@@ -39,6 +39,8 @@ class Signup extends Component {
             obj[inputId]  =  values;
         }
         console.log(obj); //shows us what user input into the form elements
+        API.saveUser(obj).then(res => 
+            console.log(res));
     }
 
     render() {
@@ -78,10 +80,10 @@ class Signup extends Component {
                             onChange={this.handleChange}
                         />
                     </FormGroup>
-                    <FormGroup controlId="aboutYou">
+                    <FormGroup controlId="title">
                         <FormLabel>Your Title</FormLabel>
                         <FormControl
-                            value={this.state.aboutYou}
+                            value={this.state.title}
                             onChange={this.handleChange}
                             placeholder={this.state.placeHolder}
                         />

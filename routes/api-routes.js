@@ -21,11 +21,11 @@ module.exports = function(app) {
     db.User.create({
       email: req.body.email,
       password: req.body.password,
-      full_name: req.body.full_name,
+      username: req.body.username,
       title: req.body.title,
       image: req.body.image
     }).then(function() {
-      res.redirect(307, "/lobby");
+      res.redirect(307, "../client/src/pages/lobby.js");
     }).catch(function(err) {
       console.log(err);
       res.json(err);
