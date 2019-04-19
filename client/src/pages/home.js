@@ -13,11 +13,10 @@ class Home extends Component {
     return (
   <div className="container">
     <Jumbotron />
-    <br></br>
       <h1> Lets Get Started</h1>
-      <Facebook /> 
-        <h3> Or.</h3>
-        <a href="/register"><button type="button" class="btn btn-secondary btn-lg">Sign In / Or Sign Up</button></a>
+    <Facebook /> 
+      <h3> Or.</h3>
+      <a href="/register"><button type="button" class="btn btn-secondary btn-lg">Sign In / Or Sign Up</button></a>
   </div>
   )
     }

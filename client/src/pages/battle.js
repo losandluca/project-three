@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import Score from "../components/scoreBar";
 import Stage from "../components/playingField";
 import Hand from "../components/hand";
+<<<<<<< HEAD
 import { databaseBase, firebase } from '../base'
+=======
+import {databaseBase, firebase} from '../base'
+>>>>>>> 050c0b52a6573e88ccacdbf1d1c4b87ed4b6c507
 
 class Battle extends Component {
 
