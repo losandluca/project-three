@@ -3,6 +3,7 @@ import firebase from './client/src/config/firebase'
 
 const { firebase } = window;
 
+// const passport = require("./config/passport");
 const express = require("express");
 const mysql = require("mysql");
 const app = express();
@@ -23,7 +24,7 @@ connection.connect(err => {
     if (err) {
         return err;
     }
-})
+});
 
 app.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
