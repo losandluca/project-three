@@ -19,6 +19,7 @@
     "react-base": "^0.2.0",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
+    "react-facebook": "^8.0.4",
     "react-facebook-login": "^4.1.1",
     "react-firebase": "^2.2.8",
     "react-fontawesome": "^1.6.1",
