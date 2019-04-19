@@ -11,6 +11,9 @@
 
 #playerCard {
     border: 2px solid black;
+    flex-wrap: wrap;
+    
+    
 }
 
 .container {
