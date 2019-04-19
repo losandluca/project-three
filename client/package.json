@@ -2,15 +2,20 @@
   "name": "project3",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+<<<<<<< HEAD
+    "bootstrap": "^4.3.1",
+=======
 
     "bootstrap": "^4.3.1",
 
     "firebase": "^5.9.4",
 
+>>>>>>> 9088db9d907454fcca36a3454624a422eda58513
     "font-awesome": "^4.7.0",
     "i": "^0.3.6",
     "npm": "^6.9.0",

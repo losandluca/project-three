@@ -14,7 +14,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../client/src/pages/register.js"));
   });
 //
-  app.get("/login", function(req, res) {
+  app.get("/lobby", function(req, res) {
     // If the user already has an account send them to the home page
     if (req.user) {
       res.redirect("../client/src/pages/home.js");
