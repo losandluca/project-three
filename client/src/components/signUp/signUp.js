@@ -86,7 +86,6 @@ class Signup extends Component {
                             placeholder={this.state.placeHolder}
                         />
                     </FormGroup>
-
                     <Button
                         block
                         type="submit"

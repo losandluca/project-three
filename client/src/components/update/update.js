@@ -1,14 +1,13 @@
-// import React from "react";
-// import "./style.css";
+import React from "react";
+import "./style.css";
 
-// class Update extends React.Component {
-//     render() {
-//         return (
-//             <div id="one">
-//                 <div className="col grid-item" id="left2">Update Your Card</div>
-//             </div>
-//         )
-//     }
-// }
+function Update (props) {
+    return (
+        <div id="one">
+            <div className="col grid-item" id="left2" onClick={() => props.clickedDiv(props.id)}>Update Your Card</div>
+        </div>
+    )
+}
 
-// export default Update;
+
+export default Update;

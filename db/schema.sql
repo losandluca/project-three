@@ -20,8 +20,7 @@ CREATE TABLE card (
 	image BLOB NOT NULL,
     health INT NOT NULL,
     attack INT NOT NULL,
-    primary key (id)
-    
+    primary key (id) 
 );
 
 CREATE TABLE alliance(

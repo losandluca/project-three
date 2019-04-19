@@ -1,8 +1,16 @@
 import React from "react";
+import Card from "../card";
+import image from "../../image.json"
 import "./style.css";
 
 class Stage extends React.Component {
+
+    state = {
+        image
+    }
+
     render() {
+// function Stage(props) {
         return (
             <div className="container-fluid">
                 <div className="split left">
@@ -18,6 +26,30 @@ class Stage extends React.Component {
                             <small className="text-muted">Player's Attack & Health Stats</small>
                         </div>
                     </div>
+
+                    {/* <div className="card" id="playerCard">
+                        <div className="card-body" id={props.id}>
+                            <h5 className="card-title" >{props.playerName}</h5>
+                            <p className="card-text" >{props.title}</p>
+                            <hr></hr>
+                            <img alt={props.img} src={props.img} className="card-img-top" alt="card"></img>
+                        </div>
+                        <div className="card-footer">
+                            <small className="text-muted">Health: {props.health} | Attack: {props.attack}</small>
+                        </div>
+                    </div> */}
+
+                    {/* {this.state.image.map((cardInPlay, index) => (
+                    <div className="col-sm-3" key={index}>
+                        <Card 
+                        playerName={cardInPlay.playerName}
+                        title={cardInPlay.title}
+                        img={cardInPlay.img}
+                        health={cardInPlay.health}
+                        attack={cardInPlay.attack}
+                        />
+                    </div>   
+                    ))}  */}
                 </div>
 
                 <div className="split right">

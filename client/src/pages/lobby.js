@@ -14,7 +14,11 @@ class Lobby extends Component {
         };
       }
 
-      render() {
+    clickedFriendDiv = () => {
+    console.log("clicked");
+    }
+
+    render() {
         return (
             <div>
                 <h2>Lobby</h2>
@@ -22,8 +26,7 @@ class Lobby extends Component {
                 <Wrapper>
                     <div className="container-fluid lobby">
                         <div className="row justify-content-center">
-                            <FriendManage />
-                            {/* <Update /> */}
+                        <FriendManage clickedFriendDiv={this.clickedFriendDiv}/>
                         <Deck friends={this.state.cards}></Deck>
                         </div>
                     </div>
@@ -31,7 +34,7 @@ class Lobby extends Component {
 
             </div>
         )
-    }
-}
+    };
+};
 
 export default Lobby;
