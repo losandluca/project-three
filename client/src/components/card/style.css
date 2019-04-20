@@ -1,0 +1,14 @@
+img{
+    width: 10px;
+    height: 130px;
+}
+
+.card-footer {
+    background-color: white;
+}
+
+.card-body {
+    background-color: white;
+    padding: 0;
+}
+
