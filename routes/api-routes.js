@@ -25,7 +25,7 @@ module.exports = function(app) {
       title: req.body.title,
       image: req.body.image
     }).then(function() {
-      res.redirect(307, "/lobby");
+      res.redirect(307, "../client/src/pages/lobby.js");
     }).catch(function(err) {
       console.log(err);
       res.json(err);

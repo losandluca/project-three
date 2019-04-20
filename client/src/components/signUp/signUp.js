@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-// import axios from "axios";
+import API from "../../utils/API";
 import "./signup.css";
 
 class Signup extends Component {
@@ -38,6 +38,8 @@ class Signup extends Component {
             obj[inputId]  =  values;
         }
         console.log(obj); //shows us what user input into the form elements
+        API.saveUser(obj).then(res => 
+            console.log(res));
     }
 
     render() {
