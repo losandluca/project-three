@@ -12,14 +12,13 @@ class Signup extends Component {
             username: "",
             password: "",
             image: "",
-            aboutYou: "",
+            title: "",
             placeHolder: "Example: Knight, The Queen, Wizard, etc."
         };
     }
 
     validateForm() {
-        return this.state.fullname.length > 0 && this.state.username.length > 0 &&
-            this.state.password.legnth > 0 && this.state.image > 0 && this.state.aboutYou.legnth > 0;
+        return this.state.username.length > 0 && this.state.password.legnth > 0 && this.state.image > 0 && this.state.title.legnth > 0;
     }
 
     handleChange = event => {
@@ -78,10 +77,10 @@ class Signup extends Component {
                             onChange={this.handleChange}
                         />
                     </FormGroup>
-                    <FormGroup controlId="aboutYou">
+                    <FormGroup controlId="title">
                         <FormLabel>Your Title</FormLabel>
                         <FormControl
-                            value={this.state.aboutYou}
+                            value={this.state.title}
                             onChange={this.handleChange}
                             placeholder={this.state.placeHolder}
                         />
