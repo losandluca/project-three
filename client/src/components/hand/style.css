@@ -1,0 +1,22 @@
+#hand {
+    border: solid gray;
+    background-color: yellow;
+    position: static;
+    overflow-x: hidden;
+    margin-top: 420px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    padding: 15px 15px 15px 15px;
+}
+
+#playerCard {
+    border: 2px solid black;
+    flex-wrap: wrap;
+    
+    
+}
+
+.container {
+    align-content: center;
+}
+

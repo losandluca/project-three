@@ -1,0 +1,135 @@
+[{
+        "id": 1,
+        "img": "https://i.redd.it/bl4ga7mxpaq21.jpg",
+        "playerName": "Henry",
+        "title": "Food truck guy",
+        "health": 90,
+        "attack": 90
+    }, {
+        "id": 2,
+        "img": "https://i.redd.it/5ie9gmr2ief11.jpg",
+        "playerName": "Sofia",
+        "title": "CEO of major company",
+        "health": 30,
+        "attack": 30
+    }, {
+        "id": 3,
+        "img": "https://i.redd.it/9uhjgte5a5u11.jpg",
+        "playerName": "Theodore",
+        "title": "The mailman",
+        "health": 60,
+        "attack": 60
+    }, {
+        "id": 4,
+        "img": "https://i.redd.it/fh3nlnts28p11.jpg",
+        "playerName": "Sebastian",
+        "title": "Head Chef",
+        "health": 55,
+        "attack": 55
+    }, {
+        "id": 5,
+        "img": "https://i.redd.it/s4yj2ur03u411.jpg",
+        "playerName": "Lucille",
+        "title": "Fireman",
+        "health": 70,
+        "attack": 70
+    }, {
+        "id": 6,
+        "img": "https://i.redd.it/bcfnivrxktc01.jpg",
+        "playerName": "Kate",
+        "title": "Assasin",
+        "health": 25,
+        "attack": 25
+    }, {
+        "id": 7,
+        "img": "https://i.redd.it/6568nrcwt9201.jpg",
+        "playerName": "Cornilius",
+        "title": "Newborn baby",
+        "health": 95,
+        "attack": 95
+    }, {
+        "id": 8,
+        "img": "https://i.redd.it/cfghaquzxkuz.jpg",
+        "playerName": "Jennifer",
+        "title": "Freelance archer",
+        "health": 35,
+        "attack": 35
+    }, {
+        "id": 9,
+        "img": "https://i.redd.it/afuxrbog63vz.jpg",
+        "playerName": "Homer",
+        "title": "Smartest man at Postinos",
+        "health": 40,
+        "attack": 40
+    }, {
+        "id": 10,
+        "img": "https://i.redd.it/n9l1k7a50gpz.jpg",
+        "playerName": "Oscar",
+        "title": "10 month old baby",
+        "health": 50,
+        "attack": 50
+    }, {
+        "id": 11,
+        "img": "https://i.redd.it/4i95xxv4exoz.jpg",
+        "playerName": "Robin",
+        "title": "Cosplayer",
+        "health": 80,
+        "attack": 80
+    }, {
+        "id": 12,
+        "img": "https://i.redd.it/mgom6lluv3kz.jpg",
+        "playerName": "Ben",
+        "title": "Creator of tickle-me-Elmo",
+        "health": 20,
+        "attack": 20
+    }, {
+        "id": 13,
+        "img": "https://i.redd.it/g03wne592tly.jpg",
+        "playerName": "Lacey",
+        "title": "fisherman",
+        "health": 60,
+        "attack": 60
+    }, {
+        "id": 14,
+        "img": "https://i.redd.it/7mmzqvrbopgz.jpg",
+        "playerName": "Joan",
+        "title": "BBQ pitmaster",
+        "health": 75,
+        "attack": 75
+    }, {
+        "id": 15,
+        "img": "https://i.redd.it/ckt6ijmy8vcy.jpg",
+        "playerName": "Alex",
+        "title": "Pro curl-er",
+        "health": 30,
+        "attack": 30
+    }, {
+        "id": 16,
+        "img": "https://i.redd.it/otdz7ibxf7q21.jpg",
+        "playerName": "Kim",
+        "title": "Sales floor rep",
+        "health": 40,
+        "attack": 40
+    }, {
+        "id": 17,
+        "img": "https://i.redd.it/mgom6lluv3kz.jpg",
+        "playerName": "Ace",
+        "title": "Pet detective",
+        "health": 70,
+        "attack": 70
+    }, {
+        "id": 18,
+        "img": "https://i.redd.it/a98h259f99q21.jpg",
+        "playerName": "Iris",
+        "title": "Eye doctor",
+        "health": 55,
+        "attack": 55
+    }, {
+        "id": 19,
+        "img": "https://i.redd.it/ig8pzort5ol21.jpg",
+        "playerName": "Luke",
+        "title": "Radio MC",
+        "health": 25,
+        "attack": 25
+    }
+]

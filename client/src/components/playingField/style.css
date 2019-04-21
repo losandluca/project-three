@@ -1,0 +1,45 @@
+.split {
+    height: 55%;
+    width: 45%;
+    position: absolute;
+    overflow-x: hidden;
+    color: gray;
+    opacity: 0.8;
+    border-style: solid;
+}
+
+#playerCard {
+    border: 2px solid black;
+}
+
+.left {
+    left: 70px;
+    background-color: orange;
+}
+
+.right {
+    right: 70px;
+    background-color: red;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* .centered img {
+    width: 150px;
+    border-radius: 50%;
+} */
+
+h5, p {
+    color: black;
+}
+
+img{
+    width: 10px;
+    height: 130px;
+}

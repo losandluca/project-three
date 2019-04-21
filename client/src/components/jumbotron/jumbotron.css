@@ -1,0 +1,11 @@
+.jumboton{
+    margin: auto;
+}
+
+p.lead {
+    font-family : 'Germania One', cursive;
+    color: white;
+    text-shadow: 2px 2px #0e0c0c;
+    text-align: center;
+    width:100%;
+  }
