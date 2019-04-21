@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import API from "../../utils/API";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "../login/login.css";
 
@@ -24,6 +25,8 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    API.existingUser().then(res => 
+      console.log(res));
   }
 
   render() {

@@ -23,7 +23,7 @@ render() {
       <div className="App"> 
         <div className="container-fluid app">
           <Route exact path="/" component={Home} />
-          <Route exact path="/lobby" component={Lobby} />
+          <Route exact path="/lobby/:id" component={Lobby} />
           <Route exact path="/battle" component={Battle} />
           <Route exact path="/register" component={Register} />
         </div>

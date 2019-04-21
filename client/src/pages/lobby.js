@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import API from "../utils/API";
 import FriendManage from "../components/FriendManage";
 import Deck from "../components/deck";
 import Wrapper from "../components/wrapper";
