@@ -13,7 +13,6 @@ class Register extends Component {
             <br></br>
             <h2> If not lets get started!</h2>
             <Signup />
-            <br></br>
             </div>
         )
     }

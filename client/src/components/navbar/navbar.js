@@ -8,10 +8,9 @@ class Navbar extends React.Component {
         <div className="pos-f-t">
             <div className="collapse" id="navbarToggleExternalContent">
                 <div className="bg-dark p-4">
-                    <h5 className="text-white h4">Are You Ready?</h5>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="/">Login / Sign In.</a>
+                            <a className="nav-link text-white" href="/">Login / Logout</a>
                         </li>
                     </ul>    
                 </div>

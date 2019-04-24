@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import API from "../../utils/API";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "../login/login.css";
 
@@ -24,7 +25,21 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-  }
+    console.log(this.state);
+    // let user = {
+    //   email: this.state.email,
+    //   password: this.state.password
+    // }
+    API.existingUser({
+      user_name: this.state.user_name,
+      password: this.state.password
+    }).then(res => {
+      console.log(res.data)
+      this.props.history.push('/lobby' + res.data.user_id);
+    }).catch(err => console.log(err))
+      this.setState({ email: "", password: ""})
+    }
+  
 
   render() {
     return (

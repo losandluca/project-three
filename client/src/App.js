@@ -5,7 +5,6 @@ import Lobby from "./pages/lobby";
 import Home from "./pages/home";
 import Register from './pages/register';
 import Navbar from "./components/navbar";
-// import defaultCards from "./image.json";
 // import Game from './Game';
 import './App.css';
 
@@ -18,17 +17,17 @@ class App extends React.Component {
 
 render() {
   return (
-  <Router>
-    <Navbar online={this.state.online} />
-      <div className="App"> 
-        <div className="container-fluid app">
-          <Route exact path="/" component={Home} />
-          <Route exact path="/lobby" component={Lobby} />
-          <Route exact path="/battle" component={Battle} />
-          <Route exact path="/register" component={Register} />
+    <Router>
+      <Navbar online={this.state.online} />
+        <div className="App"> 
+          <div className="container-fluid app">
+            <Route exact path="/" component={Home} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/lobby" component={Lobby} />
+            <Route exact path="/battle" component={Battle} />
+          </div>
         </div>
-      </div>
-  </Router>   
+    </Router>   
   );
   }
 }

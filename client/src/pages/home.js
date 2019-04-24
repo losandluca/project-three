@@ -16,7 +16,7 @@ class Home extends Component {
       <h1> Lets Get Started</h1>
     <Facebook /> 
       <h3> Or.</h3>
-      <a href="/register"><button type="button" class="btn btn-secondary btn-lg">Sign In / Or Sign Up</button></a>
+      <a href="/register"><button type="button" className="btn btn-secondary btn-lg">Sign In / Or Sign Up</button></a>
   </div>
   )
     }

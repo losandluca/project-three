@@ -18,8 +18,7 @@ class Signup extends Component {
     }
 
     validateForm() {
-        return this.state.username.length > 0 &&
-            this.state.password.legnth > 0 && this.state.image > 0 && this.state.title.legnth > 0;
+        return this.state.username.length > 0 && this.state.password.legnth > 0 && this.state.image > 0 && this.state.title.legnth > 0;
     }
 
     handleChange = event => {
@@ -40,7 +39,7 @@ class Signup extends Component {
         }
         console.log(obj); //shows us what user input into the form elements
         API.saveUser(obj).then(res => 
-            console.log(res));
+            window.location = "/lobby");
     }
 
     render() {
