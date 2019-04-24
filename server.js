@@ -1,19 +1,18 @@
 // import firebase from './client/src/config/firebase'
-
 // const { firebase } = window;
 
-var express = require("express");
-var bodyParser = require("body-parser");
-var session = require("express-session");
+const express = require("express");
+const bodyParser = require("body-parser");
+const session = require("express-session");
 // Requiring passport as we've configured it
-var passport = require("./config/passport");
+const passport = require("./config/passport");
 //
 // Setting up port and requiring models for syncing
-var PORT = process.env.PORT || 3001;
-var db = require("./models");
+const PORT = process.env.PORT || 3001;
+const db = require("./models");
 //
 // Creating express app and configuring middleware needed for authentication
-var app = express();
+const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
@@ -24,10 +23,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 //
 // Requiring our routes
-// app.use(routes)
-require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
-//
+const routes = require("./routes");
+app.use(routes)
+// require("./routes/api/html-routes.js")(app);
+// require("./routes/api/api-routes.js")(app);
+
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {

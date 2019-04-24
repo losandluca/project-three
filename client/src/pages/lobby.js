@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import API from "../utils/API";
+import API from "../utils/API";
 import FriendManage from "../components/FriendManage";
 import Deck from "../components/deck";
 import Wrapper from "../components/wrapper";
@@ -11,13 +11,22 @@ class Lobby extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            cards: null
+            cards: null,
+            user: {}
         };
       }
 
     clickedFriendDiv = () => {
     console.log("clicked");
     }
+
+
+    componentDidMount() {
+        API.existingUser(this.props.match.params.id)
+          .then(res => this.setState({ user: res.data }))
+          .catch(err => console.log(err));
+      };
+
 
     render() {
         return (

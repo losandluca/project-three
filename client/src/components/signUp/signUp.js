@@ -39,7 +39,7 @@ class Signup extends Component {
         }
         console.log(obj); //shows us what user input into the form elements
         API.saveUser(obj).then(res => 
-            console.log(res));
+            window.location = "/lobby");
     }
 
     render() {
