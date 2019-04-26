@@ -1,6 +1,6 @@
 const db = require("../models");
 const bcrypt = require("bcrypt");
-// const passport = require("../../config/passport");
+ //const passport = require("../../config/passport");
 
 module.exports = {
     findById: function(req, res) {

@@ -10,7 +10,9 @@
     "bcrypt": "^3.0.6",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
+    "client": "cd client && yarn start",
     "concurrently": "^4.1.0",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
     "firebase": "^5.9.4",
@@ -32,6 +34,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8",
     "sequelize": "^5.3.5",
+    "server": "nodemon server.js",
     "yarn": "^1.15.2"
   },
   "scripts": {
