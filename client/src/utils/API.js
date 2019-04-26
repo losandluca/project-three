@@ -6,7 +6,7 @@ export default {
     return axios.post("/api/signup", userData);
   },
 
-  //take user to their lobby with given id
+  //log in user to their lobby with given id
   currentUser: function(user) {
     console.log("currentUser api being hit");
     return axios.post("/api/login", user)
