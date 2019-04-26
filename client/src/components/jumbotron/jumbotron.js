@@ -11,8 +11,7 @@ function Jumbotron () {
             <p className="lead">This is the place where souls go and never comeback. 
               In the Friend Zone will have the ability to battle friends in a card game
               & battle them to the death. You will be able to invite your friends via Facebook, Gmail,
-              or request friends to join after you create a player card through our survey
-              and sign up method. Best of luck and Battle On! 
+              or request friends to join after you create a player card through our sign up method. Best of luck and Battle On! 
             </p>
         </div>
       </div>

@@ -2,15 +2,21 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "../login/login.css";
+import { withRouter } from "react-router-dom";
 
-export default class Login extends Component {
+class Login extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: "",
-      password: "",
-       };
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     email: "",
+  //     password: "",
+  //      };
+  // }
+
+  state = {
+    email: "",
+    password: ""
   }
 
   validateForm() {
@@ -31,7 +37,7 @@ export default class Login extends Component {
       password: this.state.password
     }).then(res => {
       console.log(res.data);
-      this.props.history.push('/lobby/' + res.data.user_id);
+      this.props.history.push('/lobby/' + res.data.id);
     }).catch(err => console.log(err))
       this.setState({ email: "", password: ""})
     }
@@ -70,3 +76,4 @@ export default class Login extends Component {
     );
   }
 }
+export default withRouter(Login);
