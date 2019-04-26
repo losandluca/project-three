@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import API from "../utils/API";
-import FriendManage from "../components/FriendManage";
-import Deck from "../components/deck";
-import Wrapper from "../components/wrapper";
-// import Update from "../components/update";
-
+import FriendManage from "../FriendManage";
+import Deck from "../deck";
+import Wrapper from "../wrapper";
 
 class Lobby extends Component {
 
@@ -21,16 +18,17 @@ class Lobby extends Component {
     }
 
 
-    componentDidMount() {
-        API.existingUser(this.props.match.params.id)
-          .then(res => this.setState({ user: res.data }))
-          .catch(err => console.log(err));
-      };
+    // componentDidMount() {
+    //     API.existingUser(this.props.match.params.id)
+    //       .then(res => this.setState({ user: res.data }))
+    //       .catch(err => console.log(err));
+    //   };
 
 
     render() {
         return (
             <div>
+                <div>
                 <h2>Lobby</h2>
                 <hr></hr>
                 <Wrapper>
@@ -41,7 +39,7 @@ class Lobby extends Component {
                         </div>
                     </div>
                 </Wrapper>
-
+                </div>
             </div>
         )
     };

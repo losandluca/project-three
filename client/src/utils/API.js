@@ -7,9 +7,9 @@ export default {
   },
 
   //take user to their lobby with given id
-  existingUser: function(user) {
-    // console.log(user);
-    return axios.post("/api/login", user)
+  currentUser: function(user) {
+    console.log("currentUser api being hit");
+    return axios.post("/api/users", user)
   },
 
   //delete a user's acct with given id
