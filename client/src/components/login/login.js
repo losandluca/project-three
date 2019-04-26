@@ -26,10 +26,6 @@ export default class Login extends Component {
   handleSubmit = event => {
     event.preventDefault();
     console.log(this.state);
-    // let user = {
-    //   email: this.state.email,
-    //   password: this.state.password
-    // }
     API.currentUser({
       email: this.state.email,
       password: this.state.password
