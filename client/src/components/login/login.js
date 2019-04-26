@@ -4,9 +4,9 @@ import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "../login/login.css";
 
 export default class Login extends Component {
+
   constructor(props) {
     super(props);
-
     this.state = {
       email: "",
       password: "",
@@ -30,11 +30,11 @@ export default class Login extends Component {
     //   email: this.state.email,
     //   password: this.state.password
     // }
-    API.existingUser({
-      user_name: this.state.user_name,
+    API.currentUser({
+      email: this.state.email,
       password: this.state.password
     }).then(res => {
-      console.log(res.data)
+      console.log(res.data);
       this.props.history.push('/lobby' + res.data.user_id);
     }).catch(err => console.log(err))
       this.setState({ email: "", password: ""})

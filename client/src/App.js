@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Battle from "./pages/battle";
-import Lobby from "./pages/lobby";
-import Home from "./pages/home";
-import Register from './pages/register';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Battle from "./components/battlepage";
+import Lobby from "./components/lobbypage";
+import Home from "./components/homepage";
 import Navbar from "./components/navbar";
 // import Game from './Game';
 import './App.css';
@@ -19,14 +18,15 @@ render() {
   return (
     <Router>
       <Navbar online={this.state.online} />
-        <div className="App"> 
-          <div className="container-fluid app">
-            <Route exact path="/" component={Home} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/lobby" component={Lobby} />
-            <Route exact path="/battle" component={Battle} />
+      <Switch>
+          <div className="App"> 
+            <div className="container-fluid app">
+              <Route exact path="/" component={Home} />
+              <Route exact path="/lobby" component={Lobby} />
+              <Route exact path="/battle" component={Battle} />
+            </div>
           </div>
-        </div>
+      </Switch> 
     </Router>   
   );
   }

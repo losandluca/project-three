@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-// import API from "../utils/API";
-import Score from "../components/scoreBar";
-import Stage from "../components/playingField";
-import Hand from "../components/hand";
-import { databaseBase, firebase } from '../base'
+import Score from "../scoreBar";
+import Stage from "../playingField";
+import Hand from "../hand";
+import { databaseBase, firebase } from 'base'
 
 class Battle extends Component {
 
@@ -22,14 +21,14 @@ class Battle extends Component {
         key: " " //assign playerOne or playerTwo as key value for battle
     };
 
-    componentDidMount() {
-        databaseBase.syncState('/game', {
-            context: this,
-            state: 'firebaseData',
-            asArray: true,
-            keepKeys: true,
-        });
-    }
+    // componentDidMount() {
+    //     databaseBase.syncState('/game', {
+    //         context: this,
+    //         state: 'firebaseData',
+    //         asArray: true,
+    //         keepKeys: true,
+    //     });
+    // }
 
     battleClick = event => {
         event.preventDefault();

@@ -1,5 +1,5 @@
 const db = require("../models");
-const bcrypt = require("bcrypt");
+// const bcrypt = require("bcrypt");
 // const passport = require("../../config/passport");
 
 module.exports = {
@@ -33,35 +33,34 @@ module.exports = {
           });
     },
 //currentUser - used to login a user already registered
-    // currentUser: function(req, res) {
-    //     console.log(req.body); 
-    //     db.User.findOne({ user_name: req.body.loginObj.user_name }).then(users => {
-    //         console.log(users);
-    //         console.log(users.user_name);
-    //         console.log(users.password);
-            
-    //         if (!users && typeof users === object) {
-    //             res.status(404).send("invalid user name or password")
-    //         } else {
-    //             bcrypt.compare(req.body.loginObj.password, users.password).then(function (bcryptRes) {
-    //                 if(!bcryptRes) {
-    //                     console.log("it worked");
-    //                     res.status(404).send("Invalid")
-    //                 } else {
-    //                     console.log("it worked too!");
-    //                     req.session.user.loggedIn = true;
-    //                 }
-    //             });
-    //         }
-    //     }).catch((err) => {
-    //         console.log(err);
-    //         res.status(422).json(err);
-    //     })
-    // },
-
     currentUser: function(req, res) {
-        if(!res) {
-            res.redirect("/register")
-        } res.json(JSON.parse(JSON.stringify(req.user)));
+        console.log(req.body); 
+        db.Users.findOne({ user_name: req.body.loginObj.user_name }).then(users => {
+            console.log(users);
+            console.log(users.user_name);
+            console.log(users.password); 
+            if (!users && typeof users === object) {
+                res.status(404).send("invalid user name or password")
+            } else {
+                bcrypt.compare(req.body.loginObj.password, users.password).then(function (bcryptRes) {
+                    if(!bcryptRes) {
+                        console.log("it worked");
+                        res.status(404).send("Invalid")
+                    } else {
+                        console.log("it worked too!");
+                        req.session.user.loggedIn = true;
+                    }
+                });
+            }
+        }).catch((err) => {
+            console.log(err);
+            res.status(422).json(err);
+        });
     }
+    // currentUser: function(req, res) {
+    //     console.log("coming here");
+    //     if(!res) {
+    //         res.redirect("/register")
+    //     } res.json(JSON.parse(JSON.stringify(req.user)));
+    // }
 };
