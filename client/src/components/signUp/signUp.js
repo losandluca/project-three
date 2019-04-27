@@ -2,27 +2,25 @@ import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import API from "../../utils/API";
 import "./signup.css";
+import { withRouter } from "react-router-dom";
 
 class Signup extends Component {
-    constructor(props) {
-        super(props);
 
-        this.state = {
-            email: "",
-            username: "",
-            password: "",
-            image: "",
-            title: "",
-            placeHolder: "Example: Knight, The Queen, Wizard, etc."
-        };
-    }
+    state = {
+        email: "",
+        username: "",
+        password: "",
+        image: "",
+        title: "",
+        placeHolder: "Example: Knight, The Queen, Wizard, etc.",
+        signup: false
+    };
 
     validateForm() {
         return this.state.username.length > 0 && this.state.password.legnth > 0 && this.state.image > 0 && this.state.title.legnth > 0;
     }
 
     handleChange = event => {
-        // console.log(event.target);
         this.setState({
             [event.target.id]: event.target.value
         });
@@ -37,10 +35,17 @@ class Signup extends Component {
             let inputId = form.elements[i].id;
             obj[inputId]  =  values;
         }
-        console.log(obj); //shows us what user input into the form elements
-        API.saveUser(obj).then(res => 
-            window.location = "/lobby");
-    }
+        console.log(obj); 
+        API.saveUser(obj).then(res => {
+            console.log(res.data);
+            this.setState({email: "", username: "", password: "", image: "", title: "", signup: true});
+            if(!this.state.signup) {
+                console.log(this.state.signup);
+            } else {
+                this.props.history.push("/lobby/" + res.data.id);
+            }
+        }).catch(err => console.log(err));   
+    };
 
     render() {
         return (
@@ -99,4 +104,4 @@ class Signup extends Component {
     }
 }
 
-export default Signup;
+export default withRouter(Signup);

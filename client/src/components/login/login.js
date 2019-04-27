@@ -6,14 +6,6 @@ import { withRouter } from "react-router-dom";
 
 class Login extends Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     email: "",
-  //     password: "",
-  //      };
-  // }
-
   state = {
     email: "",
     password: ""
@@ -40,7 +32,7 @@ class Login extends Component {
       this.props.history.push('/lobby/' + res.data.id);
     }).catch(err => console.log(err))
       this.setState({ email: "", password: ""})
-    }
+  };
   
 
   render() {
