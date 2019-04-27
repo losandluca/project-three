@@ -1,13 +1,13 @@
 [{
         "id": 1,
-        "img": "https://i.redd.it/bl4ga7mxpaq21.jpg",
+        "img": "https://i.imgur.com/t2EPVeg.jpg",
         "playerName": "Henry",
         "title": "Food truck guy",
         "health": 90,
         "attack": 90
     }, {
         "id": 2,
-        "img": "https://i.redd.it/5ie9gmr2ief11.jpg",
+        "img": "https://i.imgur.com/JgRCZik.jpg",
         "playerName": "Sofia",
         "title": "CEO of major company",
         "health": 30,
@@ -21,7 +21,7 @@
         "attack": 60
     }, {
         "id": 4,
-        "img": "https://i.redd.it/fh3nlnts28p11.jpg",
+        "img": "http://i.imgur.com/IBtFNpk.jpg",
         "playerName": "Sebastian",
         "title": "Head Chef",
         "health": 55,
@@ -91,7 +91,7 @@
         "attack": 60
     }, {
         "id": 14,
-        "img": "https://i.redd.it/7mmzqvrbopgz.jpg",
+        "img": "http://i.imgur.com/vtpcovF.jpg",
         "playerName": "Joan",
         "title": "BBQ pitmaster",
         "health": 75,
@@ -105,14 +105,14 @@
         "attack": 30
     }, {
         "id": 16,
-        "img": "https://i.redd.it/otdz7ibxf7q21.jpg",
+        "img": "https://i.redd.it/bgu12pd6mqo21.jpg",
         "playerName": "Kim",
         "title": "Sales floor rep",
         "health": 40,
         "attack": 40
     }, {
         "id": 17,
-        "img": "https://i.redd.it/mgom6lluv3kz.jpg",
+        "img": "http://i.imgur.com/0He4uGM.jpg",
         "playerName": "Ace",
         "title": "Pet detective",
         "health": 70,

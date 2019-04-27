@@ -4,7 +4,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: no-repeat cover;
+  background-size: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #root {
