@@ -3,11 +3,10 @@ const db = require("../models");
 module.exports = {
 
     findAll: function(req, res) {
-        console.log("hitting findAll controller");
+        // console.log("hitting findAll controller");
        db.User
-       .find(req.query)
-       .sort({ date: -1 })
-       .then(dbModel => res.json(dbModel))
+       .findAll(req.query)
+       .then(dbUser => res.json(dbUser))
        .catch(err => res.status(422).json(err)); 
     }
 

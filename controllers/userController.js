@@ -5,7 +5,7 @@ const db = require("../models");
 module.exports = {
 //findUser - used to find a registered user in the db
     findUser: function(req, res) {
-        console.log("findUser function hitting in userContoller.js");
+        // console.log("findUser function hitting in userContoller.js");
         if(!res) {
             res.redirect("/");
         }
@@ -13,7 +13,7 @@ module.exports = {
     },
 //newUser - used to register a new user to the app db
     newUser: function(req, res) {
-        console.log("hitting newUser in userController");
+        // console.log("hitting newUser in userController");
         db.User.create(req.body)
         .then(data => res.json(data))
         .catch(err => res.status(422).json(err));

@@ -35,9 +35,9 @@ class Signup extends Component {
             let inputId = form.elements[i].id;
             obj[inputId]  =  values;
         }
-        console.log(obj); 
+        // console.log(obj); 
         API.saveUser(obj).then(res => {
-            console.log(res.data);
+            // console.log(res.data);
             this.setState({email: "", username: "", password: "", image: "", title: "", signup: true});
             if(!this.state.signup) {
                 console.log(this.state.signup);

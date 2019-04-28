@@ -1,18 +1,13 @@
 .deck {
     align-content: center;
     width: 750px;
-    /* margin-left: 15px; */
 }
 
 #two {
-    background-color: grey;
-    border-color: blue;
-    border-style: solid;
+    background-color: whitesmoke;
     width: 900px; 
     height: 700px;
-    overflow-x: hidden; 
+    overflow-y: auto;
     margin-left: 5px;
-    
 } 
-
 

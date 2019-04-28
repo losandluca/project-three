@@ -9,9 +9,9 @@ import "./style.css";
 class FriendManage extends React.Component {
 
     state = {
-        users: [],
-        username: "",
-        online: false
+        users: [], //all registered users in the db
+        username: "", //user's username
+        online: false //show who's currently online & who's not
     };
 
     componentDidMount() {
@@ -21,19 +21,26 @@ class FriendManage extends React.Component {
     loadUsers = () => {
         API.allUsers().then(res => this.setState({ users: res.data })
         ).catch(err => console.log(err));
-    };
+    }; //loads all users registered to the db
 
     clickedDiv = () => {
         console.log("clicked");
     };
 
+    showUsers(users) {
+        this.setState({users});
+    }
+
     render() {
         return (
-            <div id="one">
-                <Friends />
-                <Update clickedDiv={this.clickedDiv}/>
-                <Messages clickedDiv={this.clickedDiv}/>
-            </div> 
+            <div>
+                <h2>Management</h2>
+                    <div id="one">
+                        <Friends users={this.state.users}/>
+                        <Update clickedDiv={this.clickedDiv}/>
+                        <Messages clickedDiv={this.clickedDiv}/>
+                    </div> 
+            </div>    
         )
     };
 };

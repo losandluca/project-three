@@ -17,7 +17,7 @@ export default {
   },
 //get all registered users
   allUsers: function() {
-    console.log("allUsers api being hit");
+    // console.log("allUsers api being hit");
     return axios.get("/api/usersRegistered");
   }
 

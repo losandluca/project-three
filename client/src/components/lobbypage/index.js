@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import FriendManage from "../FriendManage";
 import Deck from "../deck";
 import Wrapper from "../wrapper";
+import Navbar from "../navbar";
 
 class Lobby extends Component {
 
@@ -9,7 +10,8 @@ class Lobby extends Component {
         super(props);
         this.state = {
             cards: null,
-            user: {}
+            user: {},
+            online: false
         };
       }
 
@@ -28,6 +30,7 @@ class Lobby extends Component {
     render() {
         return (
             <div>
+                <Navbar />
                 <div>
                 <h2>Lobby</h2>
                 <hr></hr>
