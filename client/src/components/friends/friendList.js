@@ -6,7 +6,7 @@ function Friends(props) {
     return (
         <div id="one">
             <div className="col grid-item" id="left1">
-            <h4>Registered Users</h4>
+            <h4>Registered Users | View Friends</h4>
                 {props.users.map(people => (
                     <ul>
                         <hr className="hr"></hr>
