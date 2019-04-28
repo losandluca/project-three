@@ -27,10 +27,6 @@ class FriendManage extends React.Component {
         console.log("clicked");
     };
 
-    showUsers(users) {
-        this.setState({users});
-    }
-
     render() {
         return (
             <div>

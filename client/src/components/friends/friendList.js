@@ -8,7 +8,7 @@ function Friends(props) {
             <div className="col grid-item" id="left1">
             <h4>Registered Users | View Friends</h4>
                 {props.users.map(people => (
-                    <ul>
+                    <ul key={people.id}>
                         <hr className="hr"></hr>
                         <li>{people.username} - Online | Add Friend | Remove Friend | Play A Game? </li>
                         <hr className="hr"></hr>

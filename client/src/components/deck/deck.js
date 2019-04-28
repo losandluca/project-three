@@ -20,8 +20,8 @@ class Deck extends React.Component {
                 <div className="deck mx-auto">  
                     <hr></hr>
                     <div className="card-group row">
-                    {this.state.image.map(cards =>(
-                        <div className='col-sm-3'>
+                    {this.state.image.map(cards => (
+                        <div className='col-sm-3' key={cards.id}>
                             <Card
                             id={cards.id}
                             playerName={cards.playerName}
@@ -33,7 +33,7 @@ class Deck extends React.Component {
                             <hr></hr>
                         </div>   
                         ))}
-                        </div>
+                    </div>
                     <br></br>
                 </div>
             </div>
