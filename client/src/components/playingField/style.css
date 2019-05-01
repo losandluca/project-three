@@ -30,11 +30,16 @@
     text-align: center;
 }
 
-.centered img {
+/* .centered img {
     width: 150px;
     border-radius: 50%;
-}
+} */
 
 h5, p {
     color: black;
+}
+
+img{
+    width: 10px;
+    height: 130px;
 }

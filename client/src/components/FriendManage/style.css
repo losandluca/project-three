@@ -1,0 +1,13 @@
+#one {
+    display: grid;
+    padding: 0.5rem;
+    align-content: space-between;
+    margin-right: 5px;
+}
+
+.col {
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+

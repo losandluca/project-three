@@ -1,0 +1,12 @@
+.deck {
+    align-content: center;
+    width: 750px;
+}
+
+#two {
+    background-color: whitesmoke;
+    width: 900px; 
+    height: 700px;
+    overflow-y: auto;
+    margin-left: 5px;
+} 

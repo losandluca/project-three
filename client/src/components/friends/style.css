@@ -1,0 +1,17 @@
+#left1 {
+    background-color: goldenrod;
+    width: 450px;
+    height: 200px;
+    style: "overflow-y:scroll";
+    overflow-y: auto;
+}
+
+ul {
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 0px 0px 0px 5px;
+}
+
+hr.hr {
+    border-top: 2px solid grey;
+}

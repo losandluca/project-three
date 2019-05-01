@@ -1,34 +1,28 @@
-import React, { Component } from 'react';
-import Score from "./components/scoreBar";
-import Stage from "./components/playingField";
-import Hand from "./components/hand";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Battle from "./components/battlepage";
+import Lobby from "./components/lobbypage";
+import Home from "./components/homepage";
 import './App.css';
 
-class App extends Component {
-
-  // state = {
-  // cards = [],
-  // player1Health = 1000,
-  // player2Health = 1000
-  // timer = 3:00
-  // };
-
+class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>Battle Page</h1>
-          <hr></hr>    
-        <div className="container">
-          <Score />
-            <br></br>
-          <Stage /> 
-            {/* <br></br> */}
-          <Hand />
-        </div>
-      </div>
+      <Router>
+          <Switch>
+              <div className="App"> 
+                <div className="container-fluid app">
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/lobby/:id" component={Lobby} />
+                  <Route exact path="/battle/:id" component={Battle} />
+                </div>
+              </div>
+          </Switch> 
+      </Router>   
     );
-  }
-}
+  };
+
+};
 
 export default App;
