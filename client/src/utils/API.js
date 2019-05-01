@@ -11,14 +11,22 @@ export default {
     // console.log("currentUser api being hit");
     return axios.post("/api/login", user)
   },
-//delete a user's acct with given id
-  deleteUser: function(id) {
+//remove a user's friend from friends list with given id
+  deleteFriend: function(id) {
     return axios.delete(" " + id);
   },
 //get all registered users
   allUsers: function() {
-    console.log("allUsers api being hit");
+    // console.log("allUsers api being hit");
     return axios.get("/api/usersRegistered");
+  },
+//gets the user thats currently logged in
+  onlineUser: function(user) {
+    return axios.get("/api/online", user);
+  },
+//add a friend to user's list of friends
+  addFriend: function(friendData) {
+    return axios.post("/api/friendRequest", friendData);
   }
 
 };

@@ -1,29 +1,20 @@
 import React from "react";
 import "./style.css";
 
-class Navbar extends React.Component {
+function Navbar(props) {
 
-    render() {
-        return(
+    return (
         <div className="pos-f-t">
-            <div className="collapse" id="navbarToggleExternalContent">
-                <div className="bg-dark p-4">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link text-white" href="/">Login / Logout</a>
-                        </li>
-                    </ul>    
-                </div>
-            </div>
             <nav className="navbar navbar-dark bg-dark">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <a className="navbar-brand mx-auto" href="/" id="title">Friend Zone</a>
+                <a className="navbar-brand mx-auto centered" href="#" id="title">Friend Zone</a>
+                    <h4 id="who">
+                        User's username{props.username}
+                    </h4> 
+                <a href="/"><button className="btn btn-outline-warning" type="button">Log Out?</button></a>
             </nav>
         </div>
-        )
-    }
-}
+    )
+
+};
 
 export default Navbar;
