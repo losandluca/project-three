@@ -20,9 +20,13 @@ export default {
     // console.log("allUsers api being hit");
     return axios.get("/api/usersRegistered");
   },
-  //gets the user thats currently logged in
+//gets the user thats currently logged in
   onlineUser: function(user) {
     return axios.get("/api/online", user);
+  },
+//add a friend to user's list of friends
+  addFriend: function(friendData) {
+    return axios.post("/api/friendRequest", friendData);
   }
 
 };

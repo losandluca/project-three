@@ -30,7 +30,7 @@ class Lobby extends React.Component {
         })
           .then(res => this.setState({ username: res.data }))
           .catch(err => console.log(err));
-      }; //to show which user is logged in with their username in navbar
+    }; //to show which user is logged in with their username in navbar
 
 
     render() {
