@@ -15,11 +15,18 @@ class FriendManage extends React.Component {
     };
 
     componentDidMount() {
+        
+
         this.loadUsers();
     };
 
     loadUsers = () => {
-        API.allUsers().then(res => this.setState({ users: res.data })
+        API.allUsers().then(res => {
+            var house = localStorage.getItem("playerId")
+            var index = res.data.findIndex(takeOut => takeOut.id === house);
+            console.log(index);
+            console.log(res.data);
+            this.setState({ users: res.data })}
         ).catch(err => console.log(err));
     }; //loads all users registered to the db
 
