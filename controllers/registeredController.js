@@ -1,7 +1,7 @@
 const db = require("../models");
 
 module.exports = {
-
+//findAll - used to find all the registered users registered to the app
     findAll: function(req, res) {
         // console.log("hitting findAll controller");
        db.User

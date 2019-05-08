@@ -23,12 +23,14 @@ class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
+    // console.log(this.state);
     API.currentUser({
       email: this.state.email,
       password: this.state.password
     }).then(res => {
-      console.log(res.data);
+      // console.log(res.data);
+      localStorage.setItem("playerId", res.data.id);
+      localStorage.setItem("playerName", res.data.username);
       this.props.history.push('/lobby/' + res.data.id);
     }).catch(err => console.log(err))
       this.setState({ email: "", password: ""})
