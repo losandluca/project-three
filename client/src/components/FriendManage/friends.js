@@ -20,14 +20,12 @@ class FriendManage extends React.Component {
 
     loadUsers = () => {
         API.allUsers().then(res => {
-            var currentUser = localStorage.getItem("playerId")
-            // console.log(currentUser);
-            var index = res.data.findIndex(takeOut => takeOut === currentUser);
-            console.log(index);
-            console.log(res.data);
-            this.setState({ users: res.data })}
+            let currentUser = localStorage.getItem("playerId");
+            let filteredArr = res.data.filter(user => user.id != currentUser);
+            console.log(filteredArr);
+            this.setState({ users: filteredArr })}
         ).catch(err => console.log(err));
-    }; //loads all users registered to the db
+    }; //loads all users registered to the db except for user who's logged on
 
     clickedDiv = () => {
         console.log("clicked");

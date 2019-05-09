@@ -31,7 +31,8 @@ class Lobby extends React.Component {
         API.onlineUser({
             username: this.state.username
         })
-          .then(res => this.setState({ username: res.data.username }))
+          .then(res => {console.log(res)
+           this.setState({ username: res.data.username })})
           .catch(err => console.log(err));
     }; //to show which user is logged in with their username in navbar
 

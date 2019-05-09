@@ -8,8 +8,6 @@ class Deck extends React.Component {
     state = {
          //Set state to image.json
         image,
-    
-  
     }
 
     render() {
@@ -39,7 +37,8 @@ class Deck extends React.Component {
             </div>
         </div>
         )
-    }
+    };
+
 }
 
 export default Deck;

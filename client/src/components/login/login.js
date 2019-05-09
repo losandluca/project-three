@@ -28,9 +28,11 @@ class Login extends Component {
       email: this.state.email,
       password: this.state.password
     }).then(res => {
-      // console.log(res.data);
+      console.log(res.data);
       localStorage.setItem("playerId", res.data.id);
       localStorage.setItem("playerName", res.data.username);
+      localStorage.setItem("playerTitle", res.data.title);
+      localStorage.setItem("playerImage", res.data.image);
       this.props.history.push('/lobby/' + res.data.id);
     }).catch(err => console.log(err))
       this.setState({ email: "", password: ""})
