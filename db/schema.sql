@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS friend_zone;
+-- DROP DATABASE IF EXISTS friend_zone;
 CREATE DATABASE friend_zone;
 
 USE friend_zone;

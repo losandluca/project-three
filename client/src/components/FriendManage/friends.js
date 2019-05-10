@@ -6,12 +6,14 @@ import API from "../../utils/API";
 import "./style.css";
 
 
+
 class FriendManage extends React.Component {
 
     state = {
         users: [], //all registered users in the db
         username: "", //user's username
-        online: false //show who's currently online & who's not
+        online: false, //show who's currently online & who's not
+        firebaseData: {}
     };
 
     componentDidMount() {

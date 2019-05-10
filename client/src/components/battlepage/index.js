@@ -21,7 +21,7 @@ class Battle extends Component {
         // cardDeckTwo: 0,
         cardsInHand: [], //current cards in players hand
         cardChosen: {}, //this is the card that player 1 chooses in gameplay
-        firebaseData: [],
+        firebaseData: {},
         open: 1,
         join: 2,
         
@@ -70,73 +70,71 @@ class Battle extends Component {
         event.preventDefault();
         let handCards = this.state.cardsInHand
         let cardId = event.target.id;
+        
+        
+        let playerOne = this.firebaseData;
         console.log("ID CHOSEN: ", cardId)
 
-        handCards.forEach(card => {
-            if (card.id == cardId) {
-                this.setState({
-                    cardChosen: card
+        if(this.firebaseData === playerOne){
+            handCards.forEach(card => {
+                if (card.id == cardId) {
+                    this.setState({
+                        cardChosen: card
+    
+                    }, () => console.log("THIS IS THE CARD THAT THE PLAYER CHOSE: ", this.state.cardChosen))
+                }
 
-                }, () => console.log("THIS IS THE CARD THAT THE PLAYER CHOSE: ", this.state.cardChosen))
-            }
-        })
-        console.log("BEFORE THE FILTER: ", handCards)
+            })
+            console.log("BEFORE THE FILTER: ", handCards)
+    
+            let cardsNowInHand = handCards.filter(function (value, index, arr) {
+                return value.id != cardId;
+            });
+    
+            console.log("IN HAND AFTER PICK: ", cardsNowInHand);
+    
+            this.setState({
+                cardsInHand: cardsNowInHand
+            }, () => {
+                console.log("SETTING THE STATE OF THE FILTER", this.state.cardsInHand.length)
+                this.chooseHand(this.state.cardsInDeck);
+            });
+        }else {
 
-        let cardsNowInHand = handCards.filter(function (value, index, arr) {
-            return value.id != cardId;
-        });
+            handCards.forEach(card => {
+                if (card.id == cardId) {
+                    this.setState({
+                        cardChosen: card
+    
+                    }, () => console.log("THIS IS THE CARD THAT THE PLAYER CHOSE: ", this.state.cardChosen))
+                }
+            })
+            console.log("BEFORE THE FILTER: ", handCards)
+    
+            let cardsNowInHand = handCards.filter(function (value, index, arr) {
+                return value.id != cardId;
+            });
+    
+            console.log("IN HAND AFTER PICK: ", cardsNowInHand);
+    
+            this.setState({
+                cardsInHand: cardsNowInHand
+            }, () => {
+                console.log("SETTING THE STATE OF THE FILTER", this.state.cardsInHand.length)
+                this.chooseHand(this.state.cardsInDeck);
+            });
+    
 
-        console.log("IN HAND AFTER PICK: ", cardsNowInHand);
+        }
 
-        this.setState({
-            cardsInHand: cardsNowInHand
-        }, () => {
-            console.log("SETTING THE STATE OF THE FILTER", this.state.cardsInHand.length)
-            this.chooseHand(this.state.cardsInDeck);
-        });
-
+        
     }
 
 
     render() {
+        console.log(this.firebaseData);
         
-        let createGame =()=>{
-            let user = this.state.firebaseData.currentUser;
-            this.setState = {
-                ref: this.state.firebaseData.game,
-                creator: {uid: user},
-                open: 1
-            }
-            this.state.ref.push().set(this.state);
-        }
-        // console.log(this.state.firebaseData)
-        if (this.state.firebaseData) {
-
-            console.log(this.state.firebaseData)
-            if (this.state.firebaseData[0]) {
-                console.log("Welcome Player: ", this.state.firebaseData[0].name)
-
-            }
-            let joinGame = (key) =>{
-                let ref= this.state.firebaseData.game;
-                let user = this.firebaseData.currentUser;
-                let gameRef = ref.child(key);
-                gameRef.transaction(game =>{
-                    if (!game.joiner){
-                        game.state = this.state.join;
-                        game.joiner = {uid: this.firebaseData[0].name, displayName: user.displayName}
-                    }
-                    return game;
-                })
-            }
-
-            // if (!this.state.firebaseData[0]) {
-            //     alert("There is no player one")
-            // }
-            // if (!this.state.firebaseData[1]) {
-            //     alert("There is no player two")
-            // }
-        }
+        
         return (
             <div>
                 <h2>Battle Page</h2>
