@@ -17,21 +17,23 @@ class Lobby extends React.Component {
 
     clickedFriendDiv = () => {
     console.log("clicked");
-    }
+    };
 
     componentDidMount() {
-        this.userLoggedIn();
-    }
+        // console.log(localStorage.getItem("player"));
+        if (localStorage.getItem("playerName")) {
+            this.setState({ username: localStorage.getItem("playerName") })
+        }
+    };
 
     userLoggedIn() {
         console.log("hitting userLogged in");
         API.onlineUser({
             username: this.state.username
         })
-          .then(res => this.setState({ username: res.data }))
+          .then(res => this.setState({ username: res.data.username }))
           .catch(err => console.log(err));
-      }; //to show which user is logged in with their username in navbar
-
+    }; //to show which user is logged in with their username in navbar
 
     render() {
         return (

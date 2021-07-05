@@ -5,21 +5,22 @@
     overflow-x: hidden;
     color: gray;
     opacity: 0.8;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
 #playerCard {
     border: 2px solid black;
+   
 }
 
 .left {
     left: 70px;
-    background-color: orange;
+    /* background-color: gray; */
 }
 
 .right {
     right: 70px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .centered {

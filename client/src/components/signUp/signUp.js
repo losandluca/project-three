@@ -42,6 +42,8 @@ class Signup extends Component {
             if(!this.state.signup) {
                 console.log(this.state.signup);
             } else {
+                localStorage.setItem("playerId", res.data.id);
+                localStorage.setItem("playerName", res.data.username);
                 this.props.history.push("/lobby/" + res.data.id);
             }
         }).catch(err => console.log(err));   

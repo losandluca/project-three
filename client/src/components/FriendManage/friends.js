@@ -6,12 +6,14 @@ import API from "../../utils/API";
 import "./style.css";
 
 
+
 class FriendManage extends React.Component {
 
     state = {
         users: [], //all registered users in the db
         username: "", //user's username
-        online: false //show who's currently online & who's not
+        online: false, //show who's currently online & who's not
+        firebaseData: {}
     };
 
     componentDidMount() {
@@ -19,7 +21,13 @@ class FriendManage extends React.Component {
     };
 
     loadUsers = () => {
-        API.allUsers().then(res => this.setState({ users: res.data })
+        API.allUsers().then(res => {
+            var currentUser = localStorage.getItem("playerId")
+            // console.log(currentUser);
+            var index = res.data.findIndex(takeOut => takeOut === currentUser);
+            console.log(index);
+            console.log(res.data);
+            this.setState({ users: res.data })}
         ).catch(err => console.log(err));
     }; //loads all users registered to the db
 

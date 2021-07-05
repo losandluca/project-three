@@ -14,15 +14,17 @@ module.exports = {
 //newUser - used to register a new user to the app db
     newUser: function(req, res) {
         // console.log("hitting newUser in userController");
-        db.User.create(req.body)
+        db.User
+        .create(req.body)
         .then(data => res.json(data))
         .catch(err => res.status(422).json(err));
     },
 //playerOnline - used to get data of the online user who's logged in
     playerOnline: function(req, res) {
-        console.log("playerOnline function is hitting in controller");
+        // console.log("playerOnline function is hitting in controller");
+        console.log(req.user);
         db.User
-        .find(req.query)
+        .findOne(req.query)
         .then(dbUser => res.json(dbUser))
         .catch(err => res.status(422).json(err));
     }
